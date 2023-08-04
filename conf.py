@@ -62,7 +62,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'CSAwesome'
-copyright = 'Barbara Ericson,  Beryl Hoffman, Peter Seibel, 2015-2023.'
+copyright = 'Barbara Ericson, Beryl Hoffman, Peter Seibel, 2015-2023.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -251,5 +251,6 @@ htmlhelp_basename = 'PythonCoursewareProjectdoc'
 
 # custom  files in _static
 setup.custom_css_files = ['css/custom.css',]
+setup.custom_js_files = ['js/renumber.js',]
 
 # setup function moved to runestone 5.8.0 release

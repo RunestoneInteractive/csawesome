@@ -29,10 +29,7 @@ To make sure the site saves your answers on questions, please click on the perso
 
 .. raw:: html
 
-    <ul><li><a class="reference internal" href="Unit1-Getting-Started/toctree.html">Unit 1 Getting Started and Primitive Types</a></li><li><a class="reference internal" href="Unit2-Using-Objects/toctree.html">Unit 2 Using Objects</a></li><li><a class="reference internal" href="Unit3-If-Statements/toctree.html">Unit 3 If Statements</a></li><li><a class="reference internal" href="Unit4-Iteration/toctree.html">Unit 4 Iteration/Loops</a></li><li><a class="reference internal" href="Unit5-Writing-Classes/toctree.html">Unit 5 Writing Classes</a></li><li><a class="reference internal" href="Unit6-Arrays/toctree.html">Unit 6 Arrays</a></li><li><a class="reference internal" href="Unit7-ArrayList/toctree.html">Unit 7 ArrayLists</a></li><li><a class="reference internal" href="Unit8-2DArray/toctree.html">Unit 8 2D Arrays</a></li><li><a class="reference internal" href="Unit9-Inheritance/toctree.html">Unit 9 Inheritance</a></li><li><a class="reference internal" href="Unit10-Recursion/toctree.html">Unit 10 Recursion</a></li><li>Practice units: <a class="reference internal" href="Unit11-posttest/toctree.html">11</a>, <a class="reference internal" href="Tests/toctree.html">12</a>, <a class="reference internal" href="TimedTests/toctree.html">13</a>, <a class="reference internal" href="MixedFreeResponse/toctree.html">14</a>, <a class="reference internal" href="FreeResponse/toctree.html">15</a></li><li><a class="reference internal" href="Stories/toctree.html">Stories</a></li></ul>
-
-
-
+    <ul id="small_toc"></ul>
 
 .. Here is where you specify the content and order of your new book.
 
@@ -104,9 +101,9 @@ Index
 
 If you see errors or bugs, please report them with this |errors form|. If you are a teacher who is interested in CSAwesome PDs or community, please fill out this |interest form| and join the |teaching CSAwesome group| which will give you access to lesson plans at |csawesome|.
 
-(last revised 7/24/2023)
+(last revised 8/3/2023)
 
-© Copyright 2015 Barb Ericson, Univ. Michigan, 2019 revised by Beryl Hoffman (Elms College). Created using `Runestone  <http://runestone.academy>`_.
+© Copyright 2014-2023 Barb Ericson, Univ. Michigan; 2019-2023 Beryl Hoffman,
+Elms College; 2023 Peter Seibel, Berkeley High School. All rights reserved.
 
-
-
+Created using `Runestone  <http://runestone.academy>`_.
