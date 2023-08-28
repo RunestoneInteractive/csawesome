@@ -39,7 +39,7 @@ Concept Summary
 - **Casting a Variable** - Changing the type of a variable using *(type) name*.
 - **Operator** - Common mathematical symbols such as ``+`` for addition and ``*`` for multiplication.
 - **Compound assignment or shortcut operators** - Operators like ``x++`` which means ``x = x + 1`` or ``x *=y`` which means ``x = x * y``.
-- **modulo** - The ``%`` operator which returns the remainder from one number divide by another.
+- **remainder** - The ``%`` operator which returns the remainder from one number divided by another.
 - **arithmetic expression** - a sequence of operands and operators that describe a calculation to be performed, for example ``3*(2 + x)``
 - **operator precedence** - some operators are done before others, for example ``*``, ``/``, ``%`` have precedence over ``+`` and ``-``, unless parentheses are used.
 
@@ -95,16 +95,16 @@ For more practice, see this |Quizlet| embedded below.
 Common Mistakes
 ---------------
 
-  -  forgetting that Java is case sensitive - ``myScore`` is not the same as ``myscore``.
+-  forgetting that Java is case sensitive - ``myScore`` is not the same as ``myscore``.
 
-  -  forgetting to specify the type when declaring a variable (using ``name = value;`` instead of ``type name = value;``)
+-  forgetting to specify the type when declaring a variable (using ``name = value;`` instead of ``type name = value;``)
 
-  -  using a variable name, but never declaring the variable.
+-  using a variable name, but never declaring the variable.
 
-  -  using the wrong name for the variable.  For example calling it ``studentTotal`` when you declare it, but later calling it ``total``.
+-  using the wrong name for the variable.  For example calling it ``studentTotal`` when you declare it, but later calling it ``total``.
 
-  -  using the wrong type for a variable.  Don't forget that using integer types in calculations will give an integer result.  So either cast one integer value to double or use a double variable if you want the fractional part (the part after the decimal point).
+-  using the wrong type for a variable.  Don't forget that using integer types in calculations will give an integer result.  So either cast one integer value to double or use a double variable if you want the fractional part (the part after the decimal point).
 
-  -  using ``==`` to compare double values. Remember that double values are often an approximation. You might want to test if the absolute value of the difference between the two values is less than some amount instead.
+-  using ``==`` to compare double values. Remember that double values are often an approximation. You might want to test if the absolute value of the difference between the two values is less than some amount instead.
 
-  -  assuming that some value like 0 will be smaller than other ``int`` values.  Remember that ``int`` values can be negative as well.  If you want to set a value to the smallest possible ``int`` values use ``Integer.MIN_VALUE``.
+-  assuming that some value like 0 will be smaller than other ``int`` values.  Remember that ``int`` values can be negative as well.  If you want to set a value to the smallest possible ``int`` values use ``Integer.MIN_VALUE``.
