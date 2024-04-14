@@ -310,7 +310,7 @@ You can step through the code above by clicking on the following `Example <http:
 
    The following has the correct code for the method getScore plus at least one extra unneeded code statement.  This method will calculate and return the score for a word game.  The code should loop through all of the elements in wordList and if the length of the current word is 3 it should add one to the score, if the length of the word is 4 it should add 2 to the score, and if the length is greater than 4 it should add 3 to the score.  The method should return the score.  Drag the needed blocks from the left into the correct order on the right. Check your solution by clicking on the Check button.  You will be told if any of the blocks are in the wrong order or if you need to remove one or more blocks.  There is one extra block that is not needed in a correct solution.
    -----
-   public static int getScore(List<String> wordList)
+   public static int getScore(ArrayList<String> wordList)
    {
    =====
      int score = 0;
@@ -697,6 +697,7 @@ Here is the pseudocode for the constructor method.
             assertTrue(passed);
         }
 
+        /* //remove test because instructions say to add a matched pair.
         @Test
         public void test2()
         {
@@ -710,6 +711,7 @@ Here is the pseudocode for the constructor method.
             getResults(expect, output, "Part 2 - call to numMatches from main()", passed);
             assertTrue(passed);
         }
+        */
 
         @Test
         public void test3()

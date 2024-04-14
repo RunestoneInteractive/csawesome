@@ -188,7 +188,7 @@ These problems are similar to those you will see on the AP CSA exam.
 
       Car car = new Car(5);
       Car fastCar = new RaceCar(5);
-      car.display()
+      car.display();
       car.addFuel();
       car.display();
       fastCar.display();

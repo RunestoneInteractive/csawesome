@@ -26,7 +26,6 @@ These problems are harder than those that you will typically see on the AP CSA e
    .. code-block:: java
 
       int[][] arr = { {3,2,1},{1,2,3}};
-      int value = 0;
       for (int row = 1; row < arr.length; row++) 
       {
          for (int col = 1; col < arr[0].length; col++) 
