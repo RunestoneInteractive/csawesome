@@ -23,4 +23,4 @@ AP CSA Exam Weighting: 7.5-10%
    freeResponse.rst
    Exercises.rst
    CBLabs.rst
-
+   Array2dMoreCodePractice.rst
