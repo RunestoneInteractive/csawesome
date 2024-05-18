@@ -397,11 +397,11 @@ test condition and using the incorrect relational operator ``<`` or ``<=``.
 Input-Controlled Loops
 ----------------------
 
-.. |Magpie chatbot lab on repl.it| raw:: html
+.. |Magpie chatbot lab on replit.com| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on repl.it</a>
+   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on replit.com</a>
 
-You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used when you don't know how many times the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. For example, in the |Magpie chatbot lab on repl.it| below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
+You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used when you don't know how many times the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. For example, in the |Magpie chatbot lab on replit.com| below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
 .. raw:: html
 
@@ -410,11 +410,11 @@ You can use a ``while`` loop to repeat the body of the loop a certain number of 
 
 |CodingEx| **Coding Exercise**
 
-.. |numbers on repl.it| raw:: html
+.. |numbers on replit.com| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Average#Main.java" target="_blank">numbers on repl.it</a>
+   <a href="https://firewalledreplit.com/@BerylHoffman/Average#Main.java" target="_blank">numbers on replit.com</a>
 
-Here's another example with |numbers on repl.it|. This code calculates the average of positive numbers, but it is missing the condition for the loop on line 14.  Let's use -1 as the **sentinel value**. Add the condition to  the while loop to run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Try commenting out line 19 with // to see what happens (note there is a stop button at the top!).
+Here's another example with |numbers on replit.com|. This code calculates the average of positive numbers, but it is missing the condition for the loop on line 14.  Let's use -1 as the **sentinel value**. Add the condition to  the while loop to run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Try commenting out line 19 with // to see what happens (note there is a stop button at the top!).
 
 .. raw:: html
 
@@ -450,11 +450,11 @@ When you finish and run your program, what is a good guessing strategy for guess
 
    <a href="https://www.w3schools.com/java/java_user_input.asp" target="_blank">Scanner class</a>
 
-.. |repl.it| raw:: html
+.. |replit.com| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Guessing-Game#Main.java" target="_blank">repl.it</a>
+   <a href="https://firewalledreplit.com/@BerylHoffman/Guessing-Game#Main.java" target="_blank">replit.com</a>
 
-For this project, you will need to use the |Scanner class| for input and |repl.it| or another IDE of your choice.
+For this project, you will need to use the |Scanner class| for input and |replit.com| or another IDE of your choice.
 
 .. raw:: html
 
@@ -465,10 +465,10 @@ For this project, you will need to use the |Scanner class| for input and |repl.i
   :language: java
   :autograde: unittest
 
-  Copy and paste all of your code from your repl.it and run to see if it passes the autograder tests. Include the link to your repl.it code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
+  Copy and paste all of your code from your replit.com and run to see if it passes the autograder tests. Include the link to your replit.com code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
   ~~~~
-    // Copy in your link to your code on repl.it here:
-    // Copy in all of your code from repl.it below (include import and public class
+    // Copy in your link to your code on replit.com here:
+    // Copy in all of your code from replit.com below (include import and public class
     // Main)
 
   ====
@@ -483,7 +483,7 @@ For this project, you will need to use the |Scanner class| for input and |repl.i
       public RunestoneTests()
       {
           super("Main", input1.replaceAll(" ", "\n")); // For Book
-          // super("GuessingGame", input1.replaceAll(" ", "\n")); // For Repl.it
+          // super("GuessingGame", input1.replaceAll(" ", "\n")); // For replit.com
       }
 
       private static int goal = 1;

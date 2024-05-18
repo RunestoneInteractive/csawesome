@@ -319,7 +319,7 @@ This would be a good project to work together in pairs, and switch drivers (who 
    :autograde: unittest
    :practice: T
 
-   Type in three made up int grades and then sum and average them. Use type casting to report the result as a double. If you do this challenge on repl.it (see template and links below), please paste your repl link here to turn it in.
+   Type in three made up int grades and then sum and average them. Use type casting to report the result as a double. If you do this challenge on replit.com (see template and links below), please paste your repl link here to turn it in.
    ~~~~
    public class Challenge1_6
    {

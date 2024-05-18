@@ -391,7 +391,7 @@ Have you ever played MAD LIBS? In this game, you first choose a bunch of words w
 
 .. |repl| raw:: html
 
-   <a href="https://repl.it" target="_blank">repl.it</a>
+   <a href="https://replit.com" target="_blank">replit.com</a>
 
 
 .. |Scanner| raw:: html
@@ -406,7 +406,7 @@ Then, working in pairs, come up with another silly story that uses at least 5 ne
    :autograde: unittest
    :practice: T
 
-   If you used repl.it for this challenge, copy the url of your repl here to turn in.
+   If you used replit.com for this challenge, copy the url of your repl here to turn in.
    ~~~~
    public class MadLibs1
    {

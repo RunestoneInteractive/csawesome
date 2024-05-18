@@ -17,3 +17,4 @@ _sources copy/Appendix/DrJava.rst
 .DS_Store
 pavement.py
 sphinx_settings.json
+.vscode/settings.json

@@ -476,7 +476,7 @@ It may help to act out the code pretending you are the turtle. Remember that the
 
 .. |repl link| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank">repl.it link</a>
+   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank">replit.com link</a>
 
 
 .. activecode:: challenge2-4-TurtleHouse

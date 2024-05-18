@@ -199,11 +199,11 @@ When different methods are called from the main method, the control flows to the
         }
      }
 
-.. |Magpie lab on repl.it| raw:: html
+.. |Magpie lab on replit.com| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie lab on repl.it</a>
+   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie lab on replit.com</a>
 
-You can also run a version of the |Magpie lab on repl.it| that uses the Scanner class for input so that you can type in your own input to interact with it.
+You can also run a version of the |Magpie lab on replit.com| that uses the Scanner class for input so that you can type in your own input to interact with it.
 
 As you can see the ``getResponse`` method of Magpie2 looks for certain keywords like ``"mother"`` and ``"brother"``.  Why do you think the response to "Do you know my brother?" isn't "Tell me more about your family."?  Discuss this with partner in pairs and see if you can figure it out.
 
@@ -250,7 +250,7 @@ Activity 2: Actual Code - (Optional)
 
 You can do all of Activity 2 with the actual code using the Scanner class for input instead if you prefer.
 
-Here is the actual code for the |Magpie lab on repl.it|.  It uses the ``Scanner`` class to read input from the user.  The ``Scanner`` class is not on the AP CSA exam. You can log in to repl.it and use this code and change it to do this lab.
+Here is the actual code for the |Magpie lab on replit.com|.  It uses the ``Scanner`` class to read input from the user.  The ``Scanner`` class is not on the AP CSA exam. You can log in to replit.com and use this code and change it to do this lab.
 
 Or you can copy and paste in the code from below into any Integrated Development Environment (IDE) like DrJava or JGrasp to run on your computer.
 

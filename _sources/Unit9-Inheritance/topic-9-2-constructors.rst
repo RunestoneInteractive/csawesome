@@ -404,15 +404,15 @@ constructors.
       }
   }
 
-.. |repl.it Java Swing code| raw:: html
+.. |replit.com Java Swing code| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Shapes" style="text-decoration:underline" target="_blank">repl.it Java Swing code</a>
+   <a href="https://replit.com/@BerylHoffman/Shapes" style="text-decoration:underline" target="_blank">replit Java Swing code</a>
 
 .. |files here| raw:: html
 
    <a href="https://www.dropbox.com/s/2lmkd1m2sfh3xqc/ShapeExample.zip" target="_blank" style="text-decoration:underline">files here</a>
 
-For a more complex example of drawing shapes, try running this |repl.it Java
+For a more complex example of drawing shapes, try running this |replit.com Java
 Swing code| (or download the |files here| by clicking on Download on the top
 right and use the files in your own Java IDE). When the yellow panel comes up,
 click on either the Rectangle or the Oval button and then click and drag

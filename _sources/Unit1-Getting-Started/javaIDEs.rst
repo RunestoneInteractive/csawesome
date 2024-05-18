@@ -6,7 +6,7 @@ Java Development Environments
     single: Integrated Development Environment
     single: DrJava
     single: compiler
-    single: repl.it
+    single: replit
     single: Eclipse
     single: BlueJ
     single: Netbeans
@@ -20,12 +20,14 @@ You can learn Java by just using the interactive coding panels called **Active C
 
 However, it's a good idea to also try a Java IDE to build code outside of this e-book, especially to try coding with user input which Active Code cannot do. There are many Java IDEs available. Here are some of most popular ones used by AP CSA teachers:
 
-Replit and Replit Teams for Education
+Replit (Online IDE)
 --------------------------------------
 
-Replit (https://replit.com/) is a great free online development environment. You can login with a Google account or make an account and create new projects (click the + new repl button and type in Java) and all of your code will be kept online in your account. Replit is a great option if you are using a Chromebook or you cannot install software on your computer or you want an easy no-installation option.  Replit also has a free for teachers plan called Teams for Education (https://replit.com/teams-for-education) where teachers can set up virtual classrooms.  You can import in all of the CSAwesome challenges after you create a team with the following import link: https://replit.com/teams/import/awvdvivikzdzvoxe-CSAwesomeAPCSAJava.
+Replit (https://replit.com/) is a free online development environment. You can login with a Google account or make an account and create new projects (click the + new repl button and type in Java) and all of your code will be kept online in your account. Replit is a great option if you are using a Chromebook or you cannot install software on your computer or you want an easy no-installation option. Replit no longer has an education Teams plan. 
 
-There is now a firewalled replit domain for schools at https://firewealled.replit.com that filters content so that students stay within the school filters, see https://docs.replit.com/firewalled-replit/firewalled-replit-faq.
+Be aware that Replit has turned on its AI feature for code completion for all accounts (https://replit.com/ai). Each user can turn the AI on and off at the bottom of the code window, and use an AI chat window to ask questions of the AI. 
+
+There is a firewalled replit domain for schools at https://firewalledreplit.com that filters content so that students stay within the school filters, see https://docs.replit.com/firewalled-replit/firewalled-replit-faq.
 Some of the Active Code samples in this e-book also include a link to a firewalled replit project.
 These projects can be forked to make your own copy. If you are pair programming, replit has an Invite button where you can generate a join link to share your code with another person, and you can both make changes at the same time.
 

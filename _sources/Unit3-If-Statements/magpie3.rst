@@ -162,11 +162,11 @@ Take a look at the ``findKeyword`` method below.  It has a ``while`` loop in it 
       return -1;
    }
 
-.. |repl.it version 3| raw:: html
+.. |replit.com version 3| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v3#Main.java" target="_blank">repl.it version 3</a>
+   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v3#Main.java" target="_blank">replit.com version 3</a>
 
-Run the code below or this |repl.it version 3| to see this new method ``findKeyword`` in action. It is called from the ``getResponse`` method to print out an appropriate response based on a keyword. For example, looking for the word ``"no"`` to print out ``"Why so negative?"``, but it won't match no inside of another word like ``"another"``.
+Run the code below or this |replit.com version 3| to see this new method ``findKeyword`` in action. It is called from the ``getResponse`` method to print out an appropriate response based on a keyword. For example, looking for the word ``"no"`` to print out ``"Why so negative?"``, but it won't match no inside of another word like ``"another"``.
 
 .. code-block:: java
 
@@ -389,7 +389,7 @@ You can also step through the code in the |Java Visualizer| or using the CodeLen
 Exercise: Use the new method
 -----------------------------
 
-Repeat the changes you made to the program in Activity 2, using this new method to detect keywords. You can use the active code window above, or the |repl.it version 3| or your own IDE.
+Repeat the changes you made to the program in Activity 2, using this new method to detect keywords. You can use the active code window above, or the |replit.com version 3| or your own IDE.
 
 Questions: Prepare for the next activity
 -------------------------------------------

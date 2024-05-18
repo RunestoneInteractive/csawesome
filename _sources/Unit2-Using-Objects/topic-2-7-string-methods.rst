@@ -448,7 +448,7 @@ Create a program that takes a word and transforms it to Pig Latin using String m
 
 .. |repl| raw:: html
 
-   <a href="https://repl.it" target="_blank">repl.it</a>
+   <a href="https://replit.com" target="_blank">replit.com</a>
 
 
 .. |Scanner| raw:: html

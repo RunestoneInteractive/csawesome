@@ -270,7 +270,7 @@ Try nested loops with turtles to create a snowflake design!
 
 .. |repl link| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Java-Swing-Turtle" target="_blank">repl.it link</a>
+   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle" target="_blank">replit link</a>
 
 
 .. |Color| raw:: html

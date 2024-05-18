@@ -321,7 +321,7 @@ Here is a linear search algorithm where we access each row and then apply a line
 
 .. |replit project| raw:: html
 
-   <a href= "https://firewalledreplit.com/@BerylHoffman/Picture-Lab" style="text-decoration:underline" target="_blank" >Replit Swing project</a>
+   <a href= "https://replit.com/@BerylHoffman/Picture-Lab" style="text-decoration:underline" target="_blank" >Replit Swing project</a>
 
 .. |repl 2| raw:: html
 

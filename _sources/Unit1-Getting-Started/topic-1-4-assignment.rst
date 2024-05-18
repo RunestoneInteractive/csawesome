@@ -599,7 +599,7 @@ In this programming challenge, you will calculate your age, and your pet's age f
 
 .. |repl| raw:: html
 
-   <a href="https://repl.it" target="_blank">repl.it</a>
+   <a href="https://replit.com" target="_blank">replit.com</a>
 
 
 .. |Scanner| raw:: html

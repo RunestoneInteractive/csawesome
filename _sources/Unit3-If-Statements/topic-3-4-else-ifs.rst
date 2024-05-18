@@ -391,7 +391,7 @@ Here is a flowchart for a conditional with 3 options like in the code above.
    <a href="https://firewalledreplit.com/@BerylHoffman/Adventure#Main.java" target="_blank" style="text-decoration:underline">repl link</a>
 
 
-We encourage you to work in pairs for this challenge which is on repl.it (you will need an account there if you want to save your version).
+We encourage you to work in pairs for this challenge which is on replit.com (you will need an account there if you want to save your version).
 
 One of the first games coded for early computers in the 1970s was called |Colossal Cave Adventure|. It was a text-based interactive fiction game where you had to make your way through an elaborate cave. The program only understood one word or phrase commands like north, south, enter, take, etc. You can try |playing adventure| recreated online following some of the commands in this |walkthrough|. Part of the challenge is finding the commands that the code will understand.
 
@@ -414,10 +414,10 @@ In a game like Adventure, else if statements can be used to respond to commands 
   :language: java
   :autograde: unittest
 
-  Copy and paste your all of your code from repl.it and run to see if it passes the autograder tests. Include the link to your repl.it code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
+  Copy and paste your all of your code from replit.com and run to see if it passes the autograder tests. Include the link to your replit.com code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
   ~~~~
-    // Copy in your link to your code on repl.it here:
-    // Copy in all of your code from repl.it below (include import and public class
+    // Copy in your link to your code on replit.com here:
+    // Copy in all of your code from replit.com below (include import and public class
     // Main)
 
   ====

@@ -429,7 +429,7 @@ they are not technically required to avoid this kind of confusion.
 
    <a href="https://en.akinator.com/" style="text-decoration:underline" target="_blank">Akinator</a>
 
-We encourage you to work in pairs for this challenge which is on repl.it (you will need an account there if you want to save your version).
+We encourage you to work in pairs for this challenge which is on replit.com (you will need an account there if you want to save your version).
 
 Have you ever played 20 Questions? 20 Questions is a game where one person thinks of an object and the other players ask up to 20 questions to guess what it is.
 
@@ -451,7 +451,7 @@ The |Animal Guessing program| below uses the following decision tree:
 
 1. Try the |Animal Guessing program| below and run it a couple times thinking of an animal and answering the questions with y or n for yes or no. Did it guess your animal? Probably not! It's not very good. It can only guess 3 animals. Let's try to expand it!
 
-2. In the very last else clause, the program knows that it is not a mammal and it guesses a bird. Let's add to that part. (You may want to click on Open in Repl.it on the top right of the window and then click on Sign up or Log in to save your work). Instead of saying "I guess a bird! Click on run to play again.", change it to ask a question that distinguishes between birds and reptiles (for example does it fly?). Then, get their response and use an if statement to guess "bird" or "turtle" (or another reptile). For example, here's how we decided to choose between a dog or an elephant. We asked the question "Is it a pet?", got the response, and then with an if statement on the y/n answer we determined dog or elephant. You would use similar code to distinguish between a bird and a turtle. Run your code and test both possibilities!
+2. In the very last else clause, the program knows that it is not a mammal and it guesses a bird. Let's add to that part. (You may want to click on Open in replit.com on the top right of the window and then click on Sign up or Log in to save your work). Instead of saying "I guess a bird! Click on run to play again.", change it to ask a question that distinguishes between birds and reptiles (for example does it fly?). Then, get their response and use an if statement to guess "bird" or "turtle" (or another reptile). For example, here's how we decided to choose between a dog or an elephant. We asked the question "Is it a pet?", got the response, and then with an if statement on the y/n answer we determined dog or elephant. You would use similar code to distinguish between a bird and a turtle. Run your code and test both possibilities!
 
 .. code-block:: java
 
@@ -476,16 +476,16 @@ The |Animal Guessing program| below uses the following decision tree:
 
     <iframe height="650px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/GuessAnimal?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-After you complete your code on repl.it, paste in your code below to run it through the auto-grader. Also include a link to your code on repl.it in comments.
+After you complete your code on replit.com, paste in your code below to run it through the auto-grader. Also include a link to your code on replit.com in comments.
 
 .. activecode:: challenge3-3-IfElse-20Questions-autograde
   :language: java
   :autograde: unittest
 
-  Copy and paste your code from your repl.it and run to see if it passes the autograder tests. Include the link to your repl.it code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
+  Copy and paste your code from your replit.com and run to see if it passes the autograder tests. Include the link to your replit.com code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
   ~~~~
-    // Copy in your link to your code on repl.it here:
-    // Copy in all of your code from repl.it below (include import and public class
+    // Copy in your link to your code on replit.com here:
+    // Copy in all of your code from replit.com below (include import and public class
     // Main)
 
   ====

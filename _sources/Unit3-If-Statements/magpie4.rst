@@ -19,7 +19,7 @@ Statements like "I like cats", "I like math class", and "I like Spain" all have 
 The response could be "What do you like about something?" This activity will respond to groupings
 of words.
 
-Try each of the following as the value for the ``statement`` in the main method and see what they print.  Or you can try it on |repl.it version 4|.
+Try each of the following as the value for the ``statement`` in the main method and see what they print.  Or you can try it on |replit.com version 4|.
 
 * I want to understand French.
 * Do you like me?
@@ -309,12 +309,12 @@ In this activity, the chatbot is altered to look not only for keywords, but also
 
 Look at the code. See how it handles “I want to” and you/me statements.
 
-.. |repl.it version 4| raw:: html
+.. |replit.com version 4| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v4#Main.java" target="_blank">repl.it version 4</a>
+   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v4#Main.java" target="_blank">replit.com version 4</a>
 
 
-Then add two new methods, ``transformIWantStatement`` and ``transformIYouStatement``, and calls to each as described below. Alter the code either above in the active code window or on |repl.it version 4| or in an IDE of your choice:
+Then add two new methods, ``transformIWantStatement`` and ``transformIYouStatement``, and calls to each as described below. Alter the code either above in the active code window or on |replit.com version 4| or in an IDE of your choice:
 
 * In a method ``transformIWantStatement``, have it respond to “I want something” statements with “Would you really be happy if you had something?” You can use the already written ``transformIWantToStatement`` method as a guide. In doing this, you need to be careful about where you place the call to the method so it calls the right one. Test with the following:
 
