@@ -35,11 +35,7 @@ your prior programming experience was with a block language:
   from the AP CSP pseudocode which uses them in a similar way.
 
 - You should match the indentation of your code to the structure created by your
-  curly braces.
-
-.. 
-  [Uncomment this and add it to the last bullet point once the Reformat button ships.]
-  In this book you can use the "Reformat" button on coding
+  curly braces. In this book you can use the "Reformat" button on coding
   activities to make sure they match. Get in the habit of clicking it frequently
   to keep your code tidy.
 
