@@ -101,7 +101,7 @@ Index
 
 If you see errors or bugs, please report them with this |errors form|. If you are a teacher who is interested in CSAwesome PDs or community, please fill out this |interest form| and join the |teaching CSAwesome group| which will give you access to lesson plans at |csawesome|.
 
-(last revised 1/6/2024)
+(last revised 7/2024)
 
 © Copyright 2014-2024 Barb Ericson, Univ. Michigan; 2019-2024 Beryl Hoffman,
 Elms College; 2023-2024 Peter Seibel, Berkeley High School. All rights reserved.

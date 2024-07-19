@@ -38,16 +38,20 @@ an ``int`` by a ``double`` or an ``int`` cast to a ``double`` divided by an
    :language: java
    :autograde: unittest
 
-   What happens when you divide an int by an int or with a double operand or with the type cast (double) on one of the operands?
+   What happens when you divide an int by an int or with a double operand or with the type cast (double) or (int) on one of the operands? Add another line that divides 5 by 2 using a (double) cast. What is the result?
    ~~~~
-   public class OperatorTest
+   public class Casting
    {
        public static void main(String[] args)
        {
-           System.out.println(1 / 3);          // int divided by int
-           System.out.println(1.0 / 3);        // double divided by int
-           System.out.println(1 / 3.0);        // int divided by double
-           System.out.println((double) 1 / 3); // int cast to double, divided by int
+           System.out.println(3 / 4);          // int divided by int
+           System.out.println(3.0 / 4);        // double divided by int
+           System.out.println(3 / 4.0);        // int divided by double
+           System.out.println((double) 3 / 4); // int cast to double, divided by int
+           System.out.println((int) 3.0 / 4);  // double cast to int, divided by int
+           // Add a line of code that prints out the result of dividing 5 by 2 
+           //  using a (double) cast.
+
        }
    }
 
@@ -66,9 +70,11 @@ an ``int`` by a ``double`` or an ``int`` cast to a ``double`` divided by an
            String output = getMethodOutput("main");
            String expect =
                    "0\n"
-                       + "0.3333333333333333\n"
-                       + "0.3333333333333333\n"
-                       + "0.3333333333333333\n";
+                       + "0.75\n"
+                       + "0.75\n"
+                       + "0.75\n" 
+                       + "0\n"
+                       + "2.5\n";
            boolean passed =
                    getResults(expect, output, "Expected output from main");
            assertTrue(passed);
@@ -137,11 +143,11 @@ nearest integer to ``1.25``.
 .. activecode:: nearestInt
    :language: java
    :autograde: unittest
+   :practice: T
 
    Run the code below to see how the formula of adding or subtracting .5 and
    then casting with (int) rounds a positive or negative double number to the
-   closest int.
-
+   closest int. Add a line of code that rounds number + 2.3 to the nearest int.
    ~~~~
    public class NearestInt
    {
@@ -156,6 +162,9 @@ nearest integer to ``1.25``.
            int nearestNegInt = (int) (negNumber - 0.5);
            System.out.println(
                    "-5.0/3 rounded to nearest negative int: " + nearestNegInt);
+
+           // Print the result of rounding (number + 2.3) to the nearest int. 
+
        }
    }
 
@@ -176,10 +185,11 @@ nearest integer to ``1.25``.
                    "5.0/3 = 1.6666666666666667\n"
                        + "5/3 truncated: 1\n"
                        + "5.0/3 rounded to nearest int: 2\n"
-                       + "-5.0/3 rounded to nearest negative int: -2\n";
+                       + "-5.0/3 rounded to nearest negative int: -2\n"
+                       + "4";
 
            boolean passed =
-                   getResults(expect, output, "Expected output from main", true);
+                   getResults(expect, output, "Expected output from main");
            assertTrue(passed);
        }
    }
@@ -208,6 +218,8 @@ incorrect value could be stored. Try it below.
        {
            int id = 2147483650; // overflow
            int negative = -2147483650; // overflow
+           System.out.println(id);
+           System.out.println(negative);
        }
    }
    ====
@@ -227,7 +239,7 @@ incorrect value could be stored. Try it below.
 
            boolean passed =
                    getResults(
-                           expect, output, "Fixed Integer Overflow Error", true);
+                           expect, output, "Fixed Integer Overflow Error");
            assertTrue(passed);
        }
    }
@@ -235,21 +247,26 @@ incorrect value could be stored. Try it below.
 .. index::
    pair: double; precision format
 
-Although it's not on the AP exam, you can format long decimal numbers to just show 2 digits after the decimal point with the following code:
+Although it's not on the AP exam, you can format long decimal numbers to just show 2 digits after the decimal point with the following code using ``printf`` a formatted print method or ``format`` instead of ``println``. It takes a format string like ``%.02f`` which tells ``printf`` to print a floating point number indicated by the ``%`` with 2 digits after the decimal point. See https://docs.oracle.com/javase/tutorial/java/data/numberformat.html for more information. You can also use escape characters like ``\\n`` in the format string to do a newline. Try it below.
 
 .. activecode:: double_precision
    :language: java
    :autograde: unittest
 
-   Run the code below to see how a decimal number can be formatted to show 2 digits after the decimal point.
+   Run the code below to see how a decimal number can be formatted to show 2 digits after the decimal point. Try it with 2.0/3.
    ~~~~
    public class TestFormat
    {
        public static void main(String[] args)
        {
-           double number = 10 / 3;
+           double number = 10.0 / 3;
            System.out.println(number);
-           System.out.println(String.format("%.02f", number));
+           // format number to show 2 digits after . 
+           System.out.printf("%.2f", number);
+           // format also with $ and newline
+           System.out.printf("$%.2f\n", number);
+           // Print out the result of 2.0/3 formatted to show 2 digits after the decimal point.
+
        }
    }
 
@@ -266,10 +283,9 @@ Although it's not on the AP exam, you can format long decimal numbers to just sh
        public void testMain() throws IOException
        {
            String output = getMethodOutput("main");
-           String expect = "3.0\n3.00\n";
-
+           String expect = "3.3333333333333335\n3.33$3.33\n0.67\n";
            boolean passed =
-                   getResults(expect, output, "Expected output from main", true);
+                   getResults(expect, output, "Expected output from main");
            assertTrue(passed);
        }
    }

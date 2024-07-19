@@ -188,13 +188,49 @@ Input with Variables
    <a href="https://firewalledreplit.com/@BerylHoffman/JavaIOConsole" target="_blank">Java Console Input Repl</a>
 
 
-Variables are a powerful abstraction in programming because the same algorithm can be used with different input values saved in variables.  The code below (|JavaIOExample| using the ``Scanner`` class or |JavaIOConsole| using the ``Console`` class) will say hello to anyone who types in their name for different name values. Click on run and then type in your name. Then, try run again and type in a friend's name. The code works for any name: behold, the power of variables!
+Variables are a powerful abstraction in programming because the same algorithm can be used with different input values saved in variables.  The code below using the ``Scanner`` class will say hello to anyone who types in their name and will have different results for different name values. First, type in your name below the code and then click on run. Try again with a friend's name. The code works for any name: behold, the power of variables!
 
-.. raw:: html
+.. activecode:: inputName
+   :language: java
+   :autograde: unittest
+   :stdin: YourName
 
-    <iframe height="500px" width="100%" style="max-width:90%; margin-left:5%"  src="https://firewalledreplit.com/@BerylHoffman/JavaIOExample?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+   The code below will say hello to anyone who types in their name.  Type in your name below the code and then click on run.  Try again with a friend's name.  
+   ~~~~
+   import java.util.Scanner;
 
-Although you will not be tested in the AP CSA exam on using the Java input or the ``Scanner`` or ``Console`` classes, learning how to do input in Java is very useful and fun. For more information on using the ``Scanner`` class, go to https://www.w3schools.com/java/java_user_input.asp, and for the newer ``Console`` class, https://howtodoinjava.com/java-examples/console-input-output/.
+   public class Main 
+   {
+       public static void main(String[] args) 
+       {
+           System.out.println("Please type in a name in the input box below.");
+           Scanner scan = new Scanner(System.in);
+           String name = scan.nextLine();
+           System.out.println("Hello " + name);
+           scan.close();
+        }
+    }
+   ====
+   import static org.junit.Assert.*;
+
+   import org.junit.Test;
+
+   import java.io.*;
+
+   public class RunestoneTests extends CodeTestHelper
+   {
+       @Test
+       public void test1()
+       {
+           // String output = getMethodOutput("main");
+           boolean passed =
+                   getResults("", "", "Scanner example", true);
+           assertTrue(passed);
+       }
+   }
+
+
+Although you will not be tested in the AP CSA exam on using the Java input or the ``Scanner`` or ``Console`` classes, learning how to do input in Java is very useful and fun. For more information on using the ``Scanner`` class, go to https://www.w3schools.com/java/java_user_input.asp, and for the newer ``Console`` class, https://howtodoinjava.com/java-examples/console-input-output/. We are limited with the one way communication with the Java server in this Runestone ebook, but in most IDEs like replit, the input/output would be more interactive. Here are some examples in replit for |JavaIOExample| using the ``Scanner`` class and |JavaIOConsole| using the ``Console`` class that you can try out. 
 
 
 
@@ -249,7 +285,7 @@ will be ``false``!
    :language: java
    :autograde: unittest
 
-   Run the code below to see all the operators in action. Do all of those operators do what you expected?  What about 2 / 3? Isn't it surprising that it prints 0?  See the note below.
+   Run the code below to see all the operators in action. Do all of those operators do what you expected?  What about 2 / 3? Isn't it surprising that it prints 0?  See the note below about truncating division with integers. Change the code to make it print the decimal part of the division too. You can do this by making at least one of the numbers a double like 2.0.
    ~~~~
    public class Test1
    {
@@ -279,9 +315,9 @@ will be ``false``!
        public void test1()
        {
            String output = getMethodOutput("main");
-           String expect = "5\n-1\n6\n0\nfalse\ntrue";
+           String expect = "5\n-1\n6\n" + (2.0/3) + "\nfalse\ntrue";
            boolean passed =
-                   getResults(expect, output, "Expected output from main", true);
+                   getResults(expect, output, "Expected output from main. Make sure you change 2/3 to 2.0/3");
            assertTrue(passed);
        }
    }
