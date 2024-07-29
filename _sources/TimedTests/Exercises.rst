@@ -182,7 +182,7 @@ Click the |start| button when you are ready to begin the exam, but only then as 
       :feedback_d: Incorrect, this method prints the string reversed.
       :feedback_e: Incorrect, this method prints the string reversed.
 
-      What does the function ``mystery`` do?
+      What does the method ``mystery`` do?
 
       .. code-block:: java
 

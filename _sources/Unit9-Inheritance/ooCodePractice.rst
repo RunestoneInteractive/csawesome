@@ -1205,7 +1205,7 @@ Code Practice with Object Oriented Concepts
               :language: java
               :autograde: unittest
 
-              Override the Person class's speak function inside the Student class. Make the function print ``I'm a student``.
+              Override the Person class's speak method inside the Student class. Make the method print ``I'm a student``.
               ~~~~
               public class Person
               {
@@ -1263,7 +1263,7 @@ Code Practice with Object Oriented Concepts
 
         .. tab:: Answer
 
-           In the Student class we add a public void method called speak() and print "I'm a student" inside. It is important to remember that in order to override a function you must have the same method header and parameters!
+           In the Student class we add a public void method called speak() and print "I'm a student" inside. It is important to remember that in order to override a method you must have the same method header and parameters!
 
            .. activecode::  ooEx12a
               :language: java

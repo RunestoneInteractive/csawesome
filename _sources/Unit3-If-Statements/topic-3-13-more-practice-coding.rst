@@ -2,15 +2,25 @@
    :prefix: 3-13-
    :start: 1
 
-More Coding Practice
+FRQ Style Coding Practice
 ==============================
 
+In the following exercises which are similar to the Free Response Questions (FRQs) in the AP exam, you will write code inside a method with parameters and return values. Make sure that you use the parameter variables given in the method header and return a value.
+
+.. code-block:: java
+
+   public static return-type method-name(param-type param-var1, param-type param-var2, ...)
+   {
+       // ADD CODE HERE using the param-variables //
+       return result; 
+   }
+ 
 
 .. activecode:: front_back_written
    :language: java
    :autograde: unittest
 
-   Create the function ``front_back(str, start, end)`` that takes three strings and returns 
+   Create the method ``front_back(str, start, end)`` that takes three strings and returns 
    a string based on the following conditions.
 
    * If ``str`` contains ``start`` at the beginning and ``end`` at the end then return  ``"s_e"``.  
@@ -39,12 +49,15 @@ More Coding Practice
       +----------------------------------------------------+-----------------+
 
    ~~~~
-   public class FrontBack {
-      public static String front_back(String str, String start, String end) {
-         // ADD CODE HERE //
+   public class FrontBack 
+   {
+      public static String front_back(String str, String start, String end) 
+      {
+          // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args) 
+      {
          String str1 = "Opening time";
          String start1 = "Open";
          String end1 = "noon";
@@ -107,13 +120,15 @@ More Coding Practice
  
    ~~~~
 
-   import java.util.Scanner;
-   public class SquirrelParty{
-      public static boolean squirrelPlay(int temp, boolean isSummer) {
-              // ADD CODE HERE //
+   public class SquirrelParty
+   {
+      public static boolean squirrelPlay(int temp, boolean isSummer) 
+      {
+          // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args) 
+      {
          System.out.println(squirrelPlay(70, false));
          System.out.println(squirrelPlay(95, false));
          System.out.println(squirrelPlay(95, true));
@@ -166,14 +181,15 @@ More Coding Practice
       +----------------------------------------------------+-----------------+
 
    ~~~~
-   import java.util.Scanner;
-
-   public class VacayAlarmClock{
-      public static String alarmClock(int day, boolean vacation) {
+   public class VacayAlarmClock
+   {
+      public static String alarmClock(int day, boolean vacation) 
+      {
               // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args) 
+      {
          System.out.println(alarmClock(1, false));
          System.out.println(alarmClock(5, false));
          System.out.println(alarmClock(0, false));
@@ -227,13 +243,15 @@ More Coding Practice
       +----------------------------------------------------+-----------------+
    
    ~~~~
-   import java.util.Scanner;
-   public class DateStylishness{
-      public static int dateFashion(int you, int date) {
-              // ADD CODE HERE //
+   public class DateStylishness
+   {
+      public static int dateFashion(int you, int date) 
+      {
+          // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args) 
+      {
          System.out.println(dateFashion(5, 10));
          System.out.println(dateFashion(8, 2));
          System.out.println(dateFashion(5, 5));

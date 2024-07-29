@@ -158,7 +158,7 @@ This is the write code problems associated with the mixed up code problems. Reme
         :practice: T
         :autograde: unittest
 
-        Write the ``sumElements`` function. It should add up all of the elements in the passed-in array from ``index`` onward - so calling ``sumElements(nums, 1)`` with ``nums`` as {1,2,3,12} would return ``17`` (as that is 2 + 3 + 12). Be sure to use recursion when creating the method.
+        Write the ``sumElements`` method. It should add up all of the elements in the passed-in array from ``index`` onward - so calling ``sumElements(nums, 1)`` with ``nums`` as {1,2,3,12} would return ``17`` (as that is 2 + 3 + 12). Be sure to use recursion when creating the method.
         ~~~~
         public class ListTest
         {
@@ -438,7 +438,7 @@ This is the write code problems associated with the mixed up code problems. Reme
         :practice: T
         :autograde: unittest
 
-        Write the ``findNumX`` function. This should take in a String ``s`` and return the number of occurrences of the character ``'x'`` (NOT including ``'X'``). For example, ``findNumX("axbcx")`` would return ``2``.
+        Write the ``findNumX`` method. This should take in a String ``s`` and return the number of occurrences of the character ``'x'`` (NOT including ``'X'``). For example, ``findNumX("axbcx")`` would return ``2``.
         ~~~~
         public class Test1
         {
@@ -815,7 +815,7 @@ This is the write code problems associated with the mixed up code problems. Reme
         :practice: T
         :autograde: unittest
 
-        Write the ``sum`` function. It should take in an integer ``n`` and recursively find and return the sum of the digits of ``n``. For example, ``sum(362)`` would return ``11``, as that is 3+6+2.
+        Write the ``sum`` method. It should take in an integer ``n`` and recursively find and return the sum of the digits of ``n``. For example, ``sum(362)`` would return ``11``, as that is 3+6+2.
         ~~~~
         public class Test1
         {
@@ -863,7 +863,7 @@ This is the write code problems associated with the mixed up code problems. Reme
         :practice: T
         :autograde: unittest
 
-        Write the ``evenDigits`` function. This should take in an integer ``n`` and recursively return the number of even digits in ``n``.
+        Write the ``evenDigits`` method. This should take in an integer ``n`` and recursively return the number of even digits in ``n``.
         ~~~~
         public class Test1
         {
@@ -939,7 +939,7 @@ This is the write code problems associated with the mixed up code problems. Reme
         :practice: T
         :autograde: unittest
 
-        Write the ``factorial`` function. This should take in an integer ``n`` and return the factorial of ``n``. The factorial of N is equal to N x (N - 1) x (N - 2)... x 2 x 1. Note that N times the factorial of (N - 1) would be N factorial.
+        Write the ``factorial`` method. This should take in an integer ``n`` and return the factorial of ``n``. The factorial of N is equal to N x (N - 1) x (N - 2)... x 2 x 1. Note that N times the factorial of (N - 1) would be N factorial.
         ~~~~
         public class Test1
         {

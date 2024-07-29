@@ -496,7 +496,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        There is a ``Car`` class with a method called ``drive()`` that prints ``"vroom"``. There is a subclass of ``Car`` called ``Racecar``. The ``Racecar`` class should override ``drive()`` with a new ``drive()`` function that prints ``"vroom"`` twice by calling ``Car``'s ``drive()`` function twice.
+        There is a ``Car`` class with a method called ``drive()`` that prints ``"vroom"``. There is a subclass of ``Car`` called ``Racecar``. The ``Racecar`` class should override ``drive()`` with a new ``drive()`` method that prints ``"vroom"`` twice by calling ``Car``'s ``drive()`` method twice.
         ~~~~
         class Car
         {

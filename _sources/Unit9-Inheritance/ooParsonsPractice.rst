@@ -242,7 +242,7 @@ Try to solve each of the following. Click the *Check* button to check each solut
    :adaptive:
    :noindent:
 
-   There is a ``Car`` class whose implementation is not shown. The ``Car`` class has a method called ``drive()`` that prints ``"vroom"``. The following program should create a subclass of ``Car`` called ``Racecar``. The ``Racecar`` class should override ``drive()`` with a new ``drive()`` function that prints ``"vroom"`` twice by calling ``Car``'s ``drive()`` function twice. But, the blocks have been mixed up and may include extra blocks that are not needed in a correct solution. Drag the needed blocks from the left and put them in the correct order on the right.  Click the Check button to check your solution.
+   There is a ``Car`` class whose implementation is not shown. The ``Car`` class has a method called ``drive()`` that prints ``"vroom"``. The following program should create a subclass of ``Car`` called ``Racecar``. The ``Racecar`` class should override ``drive()`` with a new ``drive()`` method that prints ``"vroom"`` twice by calling ``Car``'s ``drive()`` method twice. But, the blocks have been mixed up and may include extra blocks that are not needed in a correct solution. Drag the needed blocks from the left and put them in the correct order on the right.  Click the Check button to check your solution.
    -----
    public class Racecar extends Car 
    {

@@ -119,7 +119,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        The ``sumVals`` function in the below program should iterate through a two-dimensional ``int`` array ``nums`` and return its sum. Fill in the headers for the for loops such that the method  iterates through the entirety of ``nums``.
+        The ``sumVals`` method in the below program should iterate through a two-dimensional ``int`` array ``nums`` and return its sum. Fill in the headers for the for loops such that the method  iterates through the entirety of ``nums``.
         ~~~~
         import java.util.Arrays;
 

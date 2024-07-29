@@ -9,7 +9,7 @@ More Code Practice with Arrays
    :language: java
    :autograde: unittest
 
-   Create a function ``sum13(nums)`` that takes an array of integers, ``nums`` and 
+   Create a method ``sum13(nums)`` that takes an array of integers, ``nums`` and 
    returns the sum of the numbers in the array. However, the number 13 is 
    very unlucky, so do not add it or the number that comes immediately 
    after a 13 to the sum.    Return ``0`` if ``nums`` is an empty array. 
@@ -35,12 +35,15 @@ More Code Practice with Arrays
           +----------------------------------------------------+-----------------+
 
    ~~~~
-   public class Sum13 {
-      public static int sum13(int[] nums) {
+   public class Sum13 
+   {
+      public static int sum13(int[] nums)
+		{
           // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args)
+		{
          int[] nums1 = {13, 1, 2};
          System.out.println(sum13(nums1));
 
@@ -65,7 +68,8 @@ More Code Practice with Arrays
    import java.util.Arrays;
 
    public class RunestoneTests extends CodeTestHelper {
-       public RunestoneTests() {
+       public RunestoneTests()
+		{
            super();
        }
 
@@ -78,11 +82,11 @@ More Code Practice with Arrays
       }
    }
 
-.. activecode:: has22_written
+.. activecode:: has22_written2
    :language: java
    :autograde: unittest
 
-   Create a function ``has22(nums)`` that takes an array of integers, ``nums`` 
+   Create a method ``has22(nums)`` that takes an array of integers, ``nums`` 
    and returns ``true`` if there are at least two items in the list that are 
    adjacent and both equal to ``2``, otherwise return ``false``. 
 
@@ -108,14 +112,17 @@ More Code Practice with Arrays
    import java.util.Scanner;
    import java.util.Arrays;
 
-   public class Has22{
-      public static boolean has22(int[] nums){
+   public class Has22
+   {
+      public static boolean has22(int[] nums)
+		{
           // ADD CODE HERE //
 
       }
 
 
-      public static void main(String[] args) {
+      public static void main(String[] args)
+		{
 
          int[] nums1 = {1, 2, 2};
          System.out.println(has22(nums1));
@@ -139,7 +146,8 @@ More Code Practice with Arrays
    import java.util.Arrays;
 
    public class RunestoneTests extends CodeTestHelper {
-      public RunestoneTests() {
+      public RunestoneTests()
+		{
          super();
       }
 
@@ -156,7 +164,7 @@ More Code Practice with Arrays
    :language: java
    :autograde: unittest
 
-   Create the ``total89(nums)`` function below that takes an array of integers,
+   Create the ``total89(nums)`` method below that takes an array of integers,
    ``nums``, and returns the total of the numbers in ``nums`` except for all numbers
    in the array between an 8 and a 9 (inclusive). 
    
@@ -177,12 +185,15 @@ More Code Practice with Arrays
       +----------------------------------+---------------------------------------+
 
    ~~~~
-   public class Total89 {
-      public static int total89(int[] nums) {
+   public class Total89 
+   {
+      public static int total89(int[] nums)
+		{
           // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args)
+		{
          int[] nums1 = {1, 2};
          System.out.println(total89(nums1));
 
@@ -201,7 +212,8 @@ More Code Practice with Arrays
    import java.util.Arrays;
 
    public class RunestoneTests extends CodeTestHelper {
-       public RunestoneTests() {
+       public RunestoneTests()
+		{
            super();
        }
 
@@ -218,7 +230,7 @@ More Code Practice with Arrays
    :language: java
    :autograde: unittest
 
-   Create a function ``twoSum(nums, target)`` that takes an array of integers
+   Create a method ``twoSum(nums, target)`` that takes an array of integers
    ``nums`` and an integer ``target`` and returns an array with the indices of 
    two numbers such that they add up to ``target``. If no two numbers add up to
    ``target``, it returns an empty array. Assume that each input has exactly one
@@ -244,12 +256,15 @@ More Code Practice with Arrays
    import java.util.Scanner;
    import java.util.Arrays;
 
-   public class TwoSum {
-      public static int[] twoSum(int[] nums, int target) {
+   public class TwoSum 
+   {
+      public static int[] twoSum(int[] nums, int target)
+		{
           // ADD CODE HERE //
       }
 
-      public static void main(String[] args) {
+      public static void main(String[] args)
+		{
         int[] nums = {2, 7, 11, 15};
         int target = 9;
         System.out.println(Arrays.toString(twoSum(nums, target))); 
@@ -267,7 +282,8 @@ More Code Practice with Arrays
    import java.util.Arrays;
 
    public class RunestoneTests extends CodeTestHelper {
-       public RunestoneTests() {
+       public RunestoneTests()
+		{
            super();
        }
 

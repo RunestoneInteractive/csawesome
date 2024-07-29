@@ -151,7 +151,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Write code to define the ``removeZeros`` method. This function should take in an ArrayList of integers ``listOfNums`` and delete all of the zeros. For example, ``{3, 0, 5, 0}`` would change into ``{3, 5}``.
+        Write code to define the ``removeZeros`` method. This method should take in an ArrayList of integers ``listOfNums`` and delete all of the zeros. For example, ``{3, 0, 5, 0}`` would change into ``{3, 5}``.
         ~~~~
         import java.util.ArrayList;
 
@@ -222,7 +222,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Write code for the ``findSmallest`` function. This code segment should take in an ArrayList ``nums`` and return the smallest element present. For example, ``findSmallest`` called on ``{5, 3, 1, 6}`` should return ``1``.
+        Write code for the ``findSmallest`` method. This code segment should take in an ArrayList ``nums`` and return the smallest element present. For example, ``findSmallest`` called on ``{5, 3, 1, 6}`` should return ``1``.
         ~~~~
         import java.util.ArrayList;
 
@@ -288,7 +288,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Write code to flesh out the ``removeOdd`` method. This function should take in a parameter ``nums`` and delete every odd number from it. For example, ``{5, 3, 2, 1, 4}`` should become ``{2, 4}``.
+        Write code to flesh out the ``removeOdd`` method. This method should take in a parameter ``nums`` and delete every odd number from it. For example, ``{5, 3, 2, 1, 4}`` should become ``{2, 4}``.
         ~~~~
         import java.util.ArrayList;
 
@@ -413,7 +413,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Create the ``moveLargest`` function. This should find the largest value in an ArrayList of Integers (the parameter) and move it to the back of the list.
+        Create the ``moveLargest`` method. This should find the largest value in an ArrayList of Integers (the parameter) and move it to the back of the list.
         ~~~~
         import java.util.ArrayList;
 
@@ -540,7 +540,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Write the function ``doubleList``. This should take in an ArrayList ``words`` and insert a copy of each element such that ``{"cat", "ribbon", "house"}`` would become ``{"cat", "cat", "ribbon", "ribbon", "house", "house"}``.
+        Write the method ``doubleList``. This should take in an ArrayList ``words`` and insert a copy of each element such that ``{"cat", "ribbon", "house"}`` would become ``{"cat", "cat", "ribbon", "ribbon", "house", "house"}``.
         ~~~~
         import java.util.ArrayList;
 
@@ -604,7 +604,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Write the function ``removeElement``. This should take in an ArrayList ``nums`` and an integer ``toRemove`` and remove every instance of that integer from ``nums``. E.g., if nums was ``{3, 6, 5, 3, 4}``, it should become ``{6, 5, 4}`` after calling ``removeElement(nums, 3)``.
+        Write the method ``removeElement``. This should take in an ArrayList ``nums`` and an integer ``toRemove`` and remove every instance of that integer from ``nums``. E.g., if nums was ``{3, 6, 5, 3, 4}``, it should become ``{6, 5, 4}`` after calling ``removeElement(nums, 3)``.
         ~~~~
         import java.util.ArrayList;
 

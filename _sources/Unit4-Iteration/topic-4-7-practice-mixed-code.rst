@@ -282,7 +282,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    :adaptive:
    :noindent:
 
-   The ``get_mid(str)`` function in the ``StringWorker`` class should return the
+   The ``get_mid(str)`` method in the ``StringWorker`` class should return the
    middle character if the string has an odd number of characters and the middle
    two characters if the string has an even number of characters.  For example,
    ``get_mid("way")`` should return ``"a"`` and ``get_mid("away")`` should
@@ -323,7 +323,7 @@ Try to solve each of the following. Click the *Check Me* button to check each so
    :adaptive:
    :noindent:
 
-   The ``ev_div(s, n)`` function in the ``NumWorker`` class should return the
+   The ``ev_div(s, n)`` method in the ``NumWorker`` class should return the
    number of digits in ``s`` (a string representation of a number) that are
    evenly divisible by ``n``.  For example, ``even_div('6892',3)`` should return
    2 since both 6 and 9 are evenly divisible by 3.

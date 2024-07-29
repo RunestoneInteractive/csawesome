@@ -496,7 +496,7 @@ We estimate that a score of about 50% on this test would correspond to the passi
         :feedback_d: Incorrect, this method prints the parameter reversed.
         :feedback_e: Incorrect, this method prints the parameter reversed.
 
-        What does the function ``mystery`` do?
+        What does the method ``mystery`` do?
 
         .. code-block:: java
 
