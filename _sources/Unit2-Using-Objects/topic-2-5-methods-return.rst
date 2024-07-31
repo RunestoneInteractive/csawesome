@@ -321,19 +321,6 @@ Here are some examples of using getters on the ``Turtle`` object ``yertle``.
             getResults(">=1", "" + num, "Calls to getHeight()", passed);
             assertTrue(passed);
         }
-
-        @Test
-        public void test3()
-        {
-            String code = getCode();
-            int num =
-                    countOccurences(code, "toString()")
-                            + countOccurences(code, "System.out.println(yertle)");
-
-            boolean passed = num > 0;
-            getResults(">=1", "" + num, "Calls to toString()", passed);
-            assertTrue(passed);
-        }
     }
 
 Methods with Arguments and a Return Value

@@ -324,6 +324,21 @@ Solve Part B
                System.out.println("Make some changes to your code, please.");
            }
        }
+
+      public String toString(){
+          String output = "[";
+      
+          for (int i = 0; i < orders.size(); i++) 
+          {
+            output += "[" + orders.get(i).getVariety() + ", " + orders.get(i).getNumBoxes() + "]";
+      
+            if (i < orders.size() - 1)
+              output += ", ";
+          }
+      
+          output += "]";
+          return output;
+        }
    }
 
     ====
@@ -340,75 +355,85 @@ Solve Part B
             super("MasterOrder");
         }
 
-        @Test
-        public void test0()
-        {
-            String output = getMethodOutput("main");
-            String expected = "Looks like your code works well!";
-
-            boolean passed = getResults(expected, output, "Running main() to check expected output");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test1()
-        {
-            MasterOrder order = new MasterOrder();
-            order.addOrder(new CookieOrder("Raisin", 3));
-            order.addOrder(new CookieOrder("Oatmeal", 8));
-            order.addOrder(new CookieOrder("Raisin", 4));
-            order.addOrder(new CookieOrder("Oatmeal", 8));
-
-            int total = order.removeVariety("Raisin");
-
-            boolean passed =
-                    getResults(
-                            "7",
-                            "" + total,
-                            "Remove Raisin from order: [[Raisin, 3], [Oatmeal, 8], [Raisin, 4],"
-                                + " [Oatmeal,8]]");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test2()
-        {
-            MasterOrder order = new MasterOrder();
-            order.addOrder(new CookieOrder("Raisin", 6));
-            order.addOrder(new CookieOrder("Oatmeal", 2));
-            order.addOrder(new CookieOrder("Raisin", 5));
-            order.addOrder(new CookieOrder("Oatmeal", 9));
-
-            int total = order.removeVariety("Chocolate Chip");
-
-            boolean passed =
-                    getResults(
-                            "0",
-                            "" + total,
-                            "Remove Chocolate Chip from order: [[Raisin, 6], [Oatmeal, 2], [Raisin, 5],"
-                                + " [Oatmeal, 9]]");
-            assertTrue(passed);
-        }
-
-        @Test
-        public void test3()
-        {
-            MasterOrder order = new MasterOrder();
-
-            order.addOrder(new CookieOrder("Oatmeal", 3));
-            order.addOrder(new CookieOrder("Raisin", 8));
-            order.addOrder(new CookieOrder("Raisin", 4));
-            order.addOrder(new CookieOrder("Oatmeal", 8));
-
-            int total = order.removeVariety("Raisin");
-
-            boolean passed =
-                    getResults(
-                            "12",
-                            "" + total,
-                            "Remove Raisin from order: [[Oatmeal, 3], [Raisin, 8], [Raisin, 4],"
-                                + " [Oatmeal,8]] (Did you make sure to remove the adjacent matches?)");
-            assertTrue(passed);
-        }
-    }
+            @Test
+             public void test1() {
+                 MasterOrder order = new MasterOrder();
+                 order.addOrder(new CookieOrder("Raisin", 3));
+                 order.addOrder(new CookieOrder("Oatmeal", 8));
+                 order.addOrder(new CookieOrder("Raisin", 4));
+                 order.addOrder(new CookieOrder("Oatmeal", 8));
+         
+                 int total = order.removeVariety("Raisin");
+         
+                 boolean passed = getResults("7", "" + total,
+                         "Remove Raisin from order should return 7: [[Raisin, 3], [Oatmeal, 8], [Raisin, 4], [Oatmeal,8]]");
+                 assertTrue(passed);
+             }
+             
+             @Test
+                 public void test1a() {
+                     MasterOrder order = new MasterOrder();
+                     order.addOrder(new CookieOrder("Raisin", 3));
+                     order.addOrder(new CookieOrder("Oatmeal", 8));
+                     order.addOrder(new CookieOrder("Raisin", 4));
+                     order.addOrder(new CookieOrder("Oatmeal", 8));
+         
+                     int total = order.removeVariety("Raisin");
+                     String result = order.toString();
+                     String expect = "[[Oatmeal, 8], [Oatmeal, 8]]";
+         
+                     boolean passed = getResults(expect, result,
+                             "Remove Raisin from order: [[Raisin, 3], [Oatmeal, 8], [Raisin, 4], [Oatmeal,8]]");
+                     assertTrue(passed);
+                 }
+         
+             @Test
+             public void test2() {
+                 MasterOrder order = new MasterOrder();
+                 order.addOrder(new CookieOrder("Raisin", 6));
+                 order.addOrder(new CookieOrder("Oatmeal", 2));
+                 order.addOrder(new CookieOrder("Raisin", 5));
+                 order.addOrder(new CookieOrder("Oatmeal", 9));
+         
+                 int total = order.removeVariety("Chocolate Chip");
+         
+                 boolean passed = getResults("0", "" + total,
+                         "Remove Chocolate Chip from order: [[Raisin, 6], [Oatmeal, 2], [Raisin, 5], [Oatmeal, 9]]");
+                 assertTrue(passed);
+             }
+         
+             @Test
+             public void test3() {
+                 MasterOrder order = new MasterOrder();
+         
+                 order.addOrder(new CookieOrder("Oatmeal", 3));
+                 order.addOrder(new CookieOrder("Raisin", 8));
+                 order.addOrder(new CookieOrder("Raisin", 4));
+                 order.addOrder(new CookieOrder("Oatmeal", 8));
+         
+                 int total = order.removeVariety("Raisin");
+         
+                 boolean passed = getResults("12", "" + total,
+                         "Remove Raisin from order: [[Oatmeal, 3], [Raisin, 8], [Raisin, 4], [Oatmeal,8]] (Did you make sure to remove the adjacent matches?)");
+                 assertTrue(passed);
+             }
+         
+             @Test
+             public void test3a() {
+                 MasterOrder order = new MasterOrder();
+         
+                 order.addOrder(new CookieOrder("Oatmeal", 3));
+                 order.addOrder(new CookieOrder("Raisin", 8));
+                 order.addOrder(new CookieOrder("Raisin", 4));
+                 order.addOrder(new CookieOrder("Oatmeal", 8));
+         
+                 int total = order.removeVariety("Raisin");
+                 String result = order.toString();
+                 String expect = "[[Oatmeal, 3], [Oatmeal, 8]]";
+         
+                 boolean passed = getResults(expect, result,
+                         "Remove Raisin from order: [[Oatmeal, 3], [Raisin, 8], [Raisin, 4], [Oatmeal,8]] (Did you make sure to remove the adjacent matches?)");
+                 assertTrue(passed);
+             }        
+      }
 

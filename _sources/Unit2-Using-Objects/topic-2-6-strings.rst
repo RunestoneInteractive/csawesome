@@ -250,6 +250,13 @@ assigning that new value back into the variable, again just like with numbers.
            boolean passed = getResults(expect, output, "Expected output from main");
            assertTrue(passed);
        }
+
+      @Test
+      public void testCodeContains()
+      {
+          boolean ifCheck2 = checkCodeContains("new String variable lastname", "String lastname = ");
+          assertTrue(ifCheck2);
+      }
    }
 
 .. note::

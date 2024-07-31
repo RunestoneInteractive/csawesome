@@ -310,7 +310,7 @@ Here is a flowchart for a conditional with 3 options like in the code above.
   :autograde: unittest
   :practice: T
 
-  Finish the following code so that it prints "Plug in your phone!" if the battery is below 50, "Unplug your phone!" if it is above 100, and "All okay!" otherwise. Change the battery value to test all 3 conditions.
+  Finish the following code so that it prints "Plug in your phone!" if the battery is below 50, "Unplug your phone!" if it is equal to 100, and "All okay!" otherwise. Change the battery value to test all 3 conditions.
   ~~~~
   public class BatteryTest
   {
@@ -346,7 +346,7 @@ Here is a flowchart for a conditional with 3 options like in the code above.
       public void testCodeContains3()
       {
           boolean ifCheck1 =
-                  checkCodeContains("if statement for battery above 100", "if (battery > 100)");
+                  checkCodeContains("if statement for battery equal to 100", "if (battery == 100)");
           assertTrue(ifCheck1);
       }
 

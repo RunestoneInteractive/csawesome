@@ -73,24 +73,54 @@ while looping over it, you’ll need to use a regular ``while`` or ``for`` loop.
    public class RunestoneTests extends CodeTestHelper
    {
        @Test
-       public void testExpected() throws IOException
-       {
-           String output = getMethodOutput("main");
-           String expect = "100";
-           boolean passed = output.contains(expect);
-           getResults(expect, output, "Prints out sum", passed);
-           assertTrue(passed);
-       }
+    public void testExpected() throws IOException
+    {
+        String allOut = getMethodOutput("main");
+        String expect = "100";
+        
+        String[] lines = allOut.split("\n");
+        String output = allOut;
 
-       @Test
-       public void testProduct() throws IOException
-       {
-           String output = getMethodOutput("main");
-           String expect = "30000";
-           boolean passed = output.contains(expect);
-           getResults(expect, output, "Prints out product", passed);
-           assertTrue(passed);
-       }
+        for (String line: lines) {
+            if (line.contains("Sum") || line.contains(expect))
+            {
+                output = line;
+                break;
+            }
+        }
+
+        boolean passed = output.contains(expect);
+        
+        getResults(expect, output, "Prints out sum", passed);
+        assertTrue(passed);
+    }
+      @Test
+    public void testProduct() throws IOException
+    {
+        String allOut = getMethodOutput("main");
+        String expect = "30000";
+
+        String[] lines = allOut.split("\n");
+        String output = allOut;
+
+        for (String line: lines) {
+            if (line.contains("Product") || line.contains(expect))
+            {
+                output = line;
+                break;
+            }
+        }
+        
+        boolean passed = output.contains(expect);
+        
+        int numZeros = countOccurences(output.substring(output.indexOf("3")), "0");
+        
+        if (numZeros != 4)
+            passed = false;
+
+        getResults(expect, output, "Prints out product", passed);
+        assertTrue(passed);
+    }
 
        @Test
        public void countForLoops()

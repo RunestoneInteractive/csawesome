@@ -105,9 +105,10 @@ Since there is only 1 copy of a ``static`` variable or method, static variables 
       @Test
       public void testMain() throws IOException
       {
+          Person.personCounter = 0;  
           String output = getMethodOutput("main");
           String expect = "Person counter: 2";
-          boolean passed = getResults(expect, output, "Expected output from main", true);
+          boolean passed = getResults(expect, output, "Expected output from main");
           assertTrue(passed);
       }
   }
