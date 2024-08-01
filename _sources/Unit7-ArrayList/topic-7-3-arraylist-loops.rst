@@ -7,7 +7,7 @@
 |Time90|
 
 Traversing ``ArrayList``\ s with Loops
-================================
+=========================================
 
 ``ArrayList``\ s can be traversed with ``while`` loops and both regular and
 enhanced ``for`` loops much the same way we use those constructs to loop over an

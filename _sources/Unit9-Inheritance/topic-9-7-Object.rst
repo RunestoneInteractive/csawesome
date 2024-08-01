@@ -26,7 +26,7 @@ lists the two main methods that are most frequently used:
 
 
 ``toString()`` method
------------------
+------------------------
 
 One commonly overridden ``Object`` method is ``toString()``, which is often used
 to print out the attributes of an object. It is a good idea to write your own

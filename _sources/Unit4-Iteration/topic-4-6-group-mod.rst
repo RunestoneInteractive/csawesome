@@ -146,7 +146,7 @@ the extras go back to the teacher.
       :.*: What is the remainder when you divide 2 by 4?
 
 Describe the Remainder (%) Operator
----------------------------------
+--------------------------------------
 
 .. shortanswer:: mod-describe-mod-sa
 

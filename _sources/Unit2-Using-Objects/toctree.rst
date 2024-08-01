@@ -31,14 +31,6 @@ AP CSA Exam Weighting: 5-7.5%
    topic-2-12-practice-coding.rst
    practice-test-objects.rst
    Exercises.rst
+   frq-practice.rst
    JavaSwingGUIs.rst
 
-.. Old TOC
-    whatIsJava.rst
-   introClassObject.rst
-   firstClass.rst
-   compileTimeErrors.rst
-   firstOOClass.rst
-   runClass.rst
-   partsOfAClass.rst
-   JavaBasicsSummary.rst

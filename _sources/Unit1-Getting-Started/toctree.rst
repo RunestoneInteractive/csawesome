@@ -27,6 +27,8 @@ Unit 1 AP CSA Exam Weighting: 2.5-5%
    topic-1-8-practice-mixed-code-toggle.rst
    topic-1-9-practice-coding.rst
    Exercises.rst
+   method-signatures-2026.rst
+   calling-class-methods-2026.rst
 
 
 

@@ -49,7 +49,7 @@ As we saw in the video, we can set one variable's value to a *copy* of the value
 Let's step through the following code in the |Java visualizer| to see the values in memory. Click on the Next button at the bottom of the code to see how the values of the variables change. You can run the visualizer on any Active Code in this e-book by just clicking on the Code Lens button at the top of each Active Code.
 
 
-.. codelens:: asgn_viz1
+.. codelens:: asgnviz1
     :language: java
     :optional:
 
