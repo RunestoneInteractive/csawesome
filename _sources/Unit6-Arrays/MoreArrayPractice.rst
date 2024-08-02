@@ -38,12 +38,12 @@ More Code Practice with Arrays
    public class Sum13 
    {
       public static int sum13(int[] nums)
-		{
+      {
           // ADD CODE HERE //
       }
 
       public static void main(String[] args)
-		{
+      {
          int[] nums1 = {13, 1, 2};
          System.out.println(sum13(nums1));
 
@@ -69,7 +69,7 @@ More Code Practice with Arrays
 
    public class RunestoneTests extends CodeTestHelper {
        public RunestoneTests()
-		{
+       { 
            super();
        }
 
@@ -115,14 +115,14 @@ More Code Practice with Arrays
    public class Has22
    {
       public static boolean has22(int[] nums)
-		{
+      {
           // ADD CODE HERE //
 
       }
 
 
       public static void main(String[] args)
-		{
+      {
 
          int[] nums1 = {1, 2, 2};
          System.out.println(has22(nums1));
@@ -147,7 +147,7 @@ More Code Practice with Arrays
 
    public class RunestoneTests extends CodeTestHelper {
       public RunestoneTests()
-		{
+      {
          super();
       }
 
@@ -188,12 +188,12 @@ More Code Practice with Arrays
    public class Total89 
    {
       public static int total89(int[] nums)
-		{
+      {
           // ADD CODE HERE //
       }
 
       public static void main(String[] args)
-		{
+      {
          int[] nums1 = {1, 2};
          System.out.println(total89(nums1));
 
@@ -213,7 +213,7 @@ More Code Practice with Arrays
 
    public class RunestoneTests extends CodeTestHelper {
        public RunestoneTests()
-		{
+        {
            super();
        }
 
@@ -259,12 +259,12 @@ More Code Practice with Arrays
    public class TwoSum 
    {
       public static int[] twoSum(int[] nums, int target)
-		{
+      {
           // ADD CODE HERE //
       }
 
       public static void main(String[] args)
-		{
+      {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
         System.out.println(Arrays.toString(twoSum(nums, target))); 
@@ -283,7 +283,7 @@ More Code Practice with Arrays
 
    public class RunestoneTests extends CodeTestHelper {
        public RunestoneTests()
-		{
+        {
            super();
        }
 

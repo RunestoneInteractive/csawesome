@@ -17,12 +17,12 @@ More Code Practice with 2D Arrays
    public class SentenceModifier 
    {
       public static String[][] findAndReplaceFirst(String[][] sentence, String target, String replacement)
-	  {
+      {
           // ADD CODE HERE //
       }
 
       public static void main(String[] args)
-	  {
+      {
         String[][] document = 
         {
             {"Hello", "world"},
@@ -38,9 +38,9 @@ More Code Practice with 2D Arrays
         String[][] updatedDocument = findAndReplaceFirst(document, target, replacement);
 
         for (String[] row : updatedDocument)
-		{
+        {
             for (String word : row)
-		    {
+            {
                 System.out.print(word + " ");
             }
             System.out.println();
@@ -77,12 +77,12 @@ More Code Practice with 2D Arrays
    public class MaxOnesRowFinder 
    {
       public static int findMaxOnes(int[][] matrix)
-	  {
+      {
          // ADD CODE HERE //
       }
 
       public static void main(String[] args)
-	  {
+      {
           int[][] matrix = 
           {
               {0, 1, 1},
@@ -126,12 +126,12 @@ More Code Practice with 2D Arrays
    public class SocialDistancingSeating 
    {
       public static boolean isSeatAvailable(int[][] theater, int row, int column)
-	  {
+      {
          // ADD CODE HERE //
       }
 
-       public static void main(String[] args)
-		{
+      public static void main(String[] args)
+      {
           int[][] theater = {
               {0, 0, 1, 1},
               {1, 1, 0, 0},
@@ -171,14 +171,15 @@ More Code Practice with 2D Arrays
    ~~~~
    import java.util.Arrays;
 
-   public class DiagonalSum {
+   public class DiagonalSum 
+   {
       public static int[] diagonalSum(int[][] matrix)
-		{
+      {
            // ADD CODE HERE //
       }
 
       public static void main(String[] args)
-		{
+      {
           int[][] matrix = {
               {1, 2, 3},
               {4, 5, 6},
