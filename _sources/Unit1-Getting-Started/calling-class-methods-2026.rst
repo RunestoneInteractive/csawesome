@@ -149,19 +149,19 @@ When calling the ``square`` method, the return value can be stored in a variable
 
 .. |visualization2| raw:: html
 
-   <a href="https://pythontutor.com/render.html#code=%20%20%20%20%20%20public%20class%20MethodTrace%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20public%20static%20int%20square%28int%20x%29%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20%28x%20*%20x%29%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20public%20static%20int%20divide%28int%20x,%20int%20y%29%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20%28x%20/%20y%29%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20System.out.println%28square%283%29%20%2B%20divide%286,2%29%29%3B%20%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">visualization</a>
+   <a href="https://pythontutor.com/render.html#code=%20%20%20%20%20%20public%20class%20MethodTrace%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20public%20static%20int%20square%28int%20x%29%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20%28x%20*%20x%29%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20public%20static%20int%20divide%28int%20x,%20int%20y%29%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20%28x%20/%20y%29%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20System.out.println%28square%283%29%20%2B%20divide%285,2%29%29%3B%20%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">visualization</a>
 
 .. mchoice:: traceMethods1
    :random:
    :practice: T
-   :answer_a: 12
-   :answer_b: 9+3
-   :answer_c: 93
-   :answer_d: square(3)+divide(6,2)
+   :answer_a: 11
+   :answer_b: 11.5
+   :answer_c: 92
+   :answer_d: square(3)+divide(5,2)
    :answer_e: Nothing, it does not compile.
    :correct: a
    :feedback_a: Yes, the square(3) method is called first and returns 9. Then the divide(6,2) method is called and returns 3. The sum of 9 and 3 is 12.
-   :feedback_b: The + here will be interpreted as addition since the methods return ints.
+   :feedback_b: The divide function does integer division. 
    :feedback_c: The + here will be interpreted as addition since the methods return ints.
    :feedback_d: The square and divide methods are called and return values that are added together.
    :feedback_e: Try the code in an active code window.
@@ -184,7 +184,7 @@ When calling the ``square`` method, the return value can be stored in a variable
 
           public static void main(String[] args)
           {
-              System.out.println(square(3) + divide(6,2)); 
+              System.out.println(square(3) + divide(5,2)); 
           }
       }
  

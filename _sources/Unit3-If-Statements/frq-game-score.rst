@@ -168,14 +168,14 @@ Let's simplify the problem by first writing the code to add the points for ``lev
 .. mchoice:: frq_expression
    :answer_a: score += levelOnePoints
    :answer_b: score += levelOne.getPoints() 
-   :answer_c: score = levelOne.getPoints() 
-   :answer_d: score = levelOne.points
+   :answer_c: score = score + Level.getPoints() 
+   :answer_d: score = Level.points
    :random:
    :correct: b
-   :feedback_a: The goalReached() method is a non-static method of the Level class. You need to call it with an object of the class.
-   :feedback_b: Correct, this calls the levelOne object's goalReached() method.
-   :feedback_c: The goalReached()`` method is a non-static method of the Level class. You need to call it with an object of the class, not the class name.
-   :feedback_d: The goalReached() method does not take an argument.
+   :feedback_a: There is no levelOnePoints variable.
+   :feedback_b: Correct, this adds levelOne's getPoints() to score.
+   :feedback_c: The getPoints()`` method is a non-static method of the Level class. You need to call it with an object of the class, not the class name.
+   :feedback_d: There is no points instance variable. 
 
    Which expression would add the points for ``levelOne`` into a variable called ``score``?
 
