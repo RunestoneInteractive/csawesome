@@ -46,7 +46,7 @@ Click the |start| button when you are ready to begin the exam, but only then as 
        :correct: c
        :feedback_a: This would be true if it was adding up all the values in the third column, the one at index 2.
        :feedback_b: This would be true if it was adding up all the values in the first column, the one at index 0.
-       :feedback_c: This code adds up all the values in the second column, the one at index 1 since column indicies start at 0.
+       :feedback_c: This code adds up all the values in the second column, the one at index 1 since column indices start at 0.
        :feedback_d: This would be true if it was adding up all the values in the last column, the one at index 3.
        :feedback_e: This would be true if it was adding up all the values in the first row, but the row changes each time through the for loop.
 

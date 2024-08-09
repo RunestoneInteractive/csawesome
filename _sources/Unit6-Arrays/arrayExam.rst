@@ -51,7 +51,7 @@ Click the "Start" button when you are ready to begin the exam, but only then as 
       :feedback_a: This would be true if the while loop continued as long as i1 and i2 where greater than or equal to 0.
       :feedback_b: This loops and only increments count when the same value is in x1 and x2, but it doesn't compare the values at index 0 since it stops when either index is 0.
       :feedback_c: It may appear that the indices get out of synchronization, but check out the else if and else code.
-      :feedback_d: The very first time through the loop the values at the two indicies are equal and count is incremented.
+      :feedback_d: The very first time through the loop the values at the two indices are equal and count is incremented.
 
       What is the value of ``count`` after the following code has executed?
 
@@ -124,7 +124,7 @@ Click the "Start" button when you are ready to begin the exam, but only then as 
       :correct: e
       :feedback_a: While count starts at 0 it is incremented when a match is found, which will happen when i1 is 1 and i2 is 0.
       :feedback_b: This would be true if the loop stopped after the first match was found, but it does not.
-      :feedback_c: This would be true if the code only looked for a match at the same indicies.
+      :feedback_c: This would be true if the code only looked for a match at the same indices.
       :feedback_d: This would be true if both i2 and i1 were incremented when a match was found.
       :feedback_e: This code only increments i2 when a match is found, which means that the 2 at position 2 in x1 matches both 2's in x2.
 

@@ -275,7 +275,7 @@ Click the |start| button when you are ready to begin the exam, but only then as 
       :correct: d
       :feedback_a: This would be true if it was return(a[1]*= 2);.
       :feedback_b: This would be true if the return statement was return (a[0]*=2);.
-      :feedback_c: This would be true if it was a[0]--;  Or it would be true if array indicies started at 1, but they start with 0.
+      :feedback_c: This would be true if it was a[0]--;  Or it would be true if array indices started at 1, but they start with 0.
       :feedback_d: The statement a[1]--; is the same as a[1] = a[1] - 1; so this will change the 3 to a 2.  The return (a[1] * 2) does not change the value at a[1].
       :feedback_e: This can't be true because a[1]--; means the same as a[1] = a[1] - 1;  So the 3 will become a 2.  Parameters are all pass by value in Java which means that a copy of the value is passed to a method.  But, since an array is an object a copy of the value is a copy of the reference to the object.  So changes to objects in methods are permanent.
 

@@ -356,7 +356,7 @@ You can step through the code above with the Java Visualizer by clicking the fol
         :correct: b
         :feedback_a: This would be true if it was <code>return (a[1] *= 2);</code>, which would change the value at <code>a[1]</code>.
         :feedback_b: The statement <code>a[1]--;</code> is the same as <code>a[1] = a[1] - 1;</code> so this will change the 3 to 2.  The <code>return (a[1] * 2)</code> does not change the value at <code>a[1]</code>.
-        :feedback_c: This would be true if array indicies started at 1 instead of 0 and if the code changed the value at index 1 to the current value times two.
+        :feedback_c: This would be true if array indices started at 1 instead of 0 and if the code changed the value at index 1 to the current value times two.
         :feedback_d: This would be true if array indices started at 1 rather than 0.
         :feedback_e: This can't be true because <code>a[1]--;</code>  means the same as <code>a[1] = a[1] - 1;</code>  so the 3 changes to 2.  Parameters are all pass by value in Java which means that a copy of the value is passed to a method. But, since an array is an object a copy of the value is a copy of the reference to the object. So changes to objects in methods are permanent.
 

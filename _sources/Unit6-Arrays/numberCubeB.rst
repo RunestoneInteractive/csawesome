@@ -37,7 +37,7 @@ The following is a free response question from 2009.  It was question 1 on the e
 series of number cube tosses. The method returns the starting index in the array of a run of maximum size. A
 run is defined as the repeated occurrence of the same value in two or more consecutive positions in the
 array.  In the example array shown above there are two runs of length 4.  One starts at index 6 and one at index 14.  The method
-may return either of those indicies.
+may return either of those indices.
 
 If there are no runs of any value, the method returns -1.
 

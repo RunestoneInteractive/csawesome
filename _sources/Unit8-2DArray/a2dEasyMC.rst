@@ -31,9 +31,9 @@ You can see how the array looks by clicking on the following `Ex-9-7-1 <http://c
    :answer_e: <code>strGrid[0][0] = "S";</code>
    :correct: d
    :feedback_a: The code <code>letterGrid[0][2] = "S";</code> actually sets the 1st row and 3rd column to hold a reference to the <code>String</code> object "S".
-   :feedback_b: This would be true if row and column indicies started at 1 instead of 0 and if this was in column major order.
-   :feedback_c: This would be true if row and column indicies started at 1 instead of 0.
-   :feedback_d: In row-major order the row is specified first followed by the column.  Row and column indicies start with 0.  So <code>letterGrid[2][0]</code> is the 3rd row and 1st column.
+   :feedback_b: This would be true if row and column indices started at 1 instead of 0 and if this was in column major order.
+   :feedback_c: This would be true if row and column indices started at 1 instead of 0.
+   :feedback_d: In row-major order the row is specified first followed by the column.  Row and column indices start with 0.  So <code>letterGrid[2][0]</code> is the 3rd row and 1st column.
    :feedback_e: This would set the element at the first row and column.
 
    Which of the following statements assigns the letter S to the third row and first column of a two-dimensional array named ``strGrid`` (assuming row-major order).
@@ -47,10 +47,10 @@ You can see how the array looks by clicking on the following `Ex-9-7-1 <http://c
    :answer_e: a[3][1]
    :correct: c
    :feedback_a: This would be true if the row index started at 0, but the column index started at 1.
-   :feedback_b: Both the row and column indicies start with 0.
+   :feedback_b: Both the row and column indices start with 0.
    :feedback_c: The value 6 is at row 0 and column 2.
    :feedback_d: The row index is specified first, then the column index.
-   :feedback_e: The row index is specified first and the indicies start at 0.
+   :feedback_e: The row index is specified first and the indices start at 0.
 
    How would you get the value 6 out of the following array ``int[][] a = { {2, 4, 6, 8}, {1, 2, 3, 4}};``?
 

@@ -74,5 +74,5 @@ Common Mistakes
   -  using ``array.length()`` instead of ``array.length`` (not penalized on the free response)
   -  going out of bounds when looping through an array  (using ``index <= array.length``).  You will get an ``ArrayIndexOutOfBoundsException``.
   -  jumping out an loop by using one or more return statements before every value has been processed.
-  -  using the wrong starting and ending indicies on loops.
+  -  using the wrong starting and ending indices on loops.
   -  using ``array.length`` for both the number of rows and columns.  Use ``array[0].length`` for the number of columns.
