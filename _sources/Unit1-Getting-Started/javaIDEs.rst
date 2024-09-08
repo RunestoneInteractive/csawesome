@@ -12,7 +12,10 @@ Java Development Environments
     single: Netbeans
     single: VSCode
     single: Github
-    single: Codespaces
+    single: JuiceMind
+    single: jGRASP
+    single: IntelliJ
+    single: PickCode
 
 The tool that we use to compile a Java source file into a Java class file is called a **compiler**.  Most programmers use an **Integrated Development Environment** (IDE) that has the compiler built in and helps you write, compile, run, and debug programs.
 
@@ -20,20 +23,21 @@ You can learn Java by just using the interactive coding panels called **Active C
 
 However, it's a good idea to also try a Java IDE to build code outside of this e-book, especially to try coding with user input which Active Code cannot do. There are many Java IDEs available. Here are some of most popular ones used by AP CSA teachers:
 
-Replit (Online IDE)
+Cloud IDEs
 --------------------------------------
 
-Replit (https://replit.com/) is a free online development environment. You can login with a Google account or make an account and create new projects (click the + new repl button and type in Java) and all of your code will be kept online in your account. Replit is a great option if you are using a Chromebook or you cannot install software on your computer or you want an easy no-installation option. Replit no longer has an education Teams plan. 
+There are a lot of online cloud IDEs where you can code online in many programming languages. Most are free to start, but offer different features for a price. These are great options if you are using a Chromebook or you cannot install software on your computer or you want an easy no-installation option. Some of the Active Code samples in this e-book also include a link to online IDEs. These projects can be copied to make your own copy.
 
-Be aware that Replit has turned on its AI feature for code completion for all accounts (https://replit.com/ai). Each user can turn the AI on and off at the bottom of the code window, and use an AI chat window to ask questions of the AI. 
+Here are some popular online IDEs:
 
-There is a firewalled replit domain for schools at https://firewalledreplit.com that filters content so that students stay within the school filters, see https://docs.replit.com/firewalled-replit/firewalled-replit-faq.
-Some of the Active Code samples in this e-book also include a link to a firewalled replit project.
-These projects can be forked to make your own copy. If you are pair programming, replit has an Invite button where you can generate a join link to share your code with another person, and you can both make changes at the same time.
+- Replit (https://replit.com/) an online IDE which recently switched to only allowing 3 projects at a time for free.  
+Be aware that Replit has turned on its AI feature for code completion for all accounts (https://replit.com/ai). Each user can turn the AI on and off at the bottom of the code window, and use an AI chat window to ask questions of the AI.
 
-Online IDEs usually cannot use graphical user interfaces and just do input and output as text.
-However, replit has a built-in javax.swing graphical user interface.
-You need to choose Java Swing instead of just Java to get this environment when you start a new repl project.
+- JuiceMind (https://juicemind.com/) is an online IDE that offers many free and paid features for teachers to set up classrooms like Coding Rooms. It has a built-in version of CSAwesome. 
+
+- PickCode (https://pickcode.io/) is another online IDE that offers many free and paid features for setting up classrooms. 
+ 
+
 
 Github Classroom and Codespaces
 -----------------------------------

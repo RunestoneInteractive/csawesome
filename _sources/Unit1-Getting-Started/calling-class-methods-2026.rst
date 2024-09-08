@@ -160,7 +160,7 @@ When calling the ``square`` method, the return value can be stored in a variable
    :answer_d: square(3)+divide(5,2)
    :answer_e: Nothing, it does not compile.
    :correct: a
-   :feedback_a: Yes, the square(3) method is called first and returns 9. Then the divide(6,2) method is called and returns 3. The sum of 9 and 3 is 12.
+   :feedback_a: Yes, the square(3) method is called first and returns 9. Then the divide(5,2) method is called and returns 2 because it does int division and leaves off the decimal part. The sum of 9 and 2 is 11.
    :feedback_b: The divide function does integer division. 
    :feedback_c: The + here will be interpreted as addition since the methods return ints.
    :feedback_d: The square and divide methods are called and return values that are added together.

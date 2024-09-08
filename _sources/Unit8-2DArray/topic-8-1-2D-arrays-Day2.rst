@@ -152,7 +152,7 @@ You can also initialize (set) the values for the array when you create it.  In t
    What is the value at ``seatingInfo[2][1]`` after the code above executes?
 
    -    :Luke$: Correct.  The string at row index 2 and column index 1 is Luke.
-        :.*: Indicies start at 0 and the row is first then the column
+        :.*: Indices start at 0 and the row is first then the column
 
 
 
