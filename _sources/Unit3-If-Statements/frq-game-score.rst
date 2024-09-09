@@ -102,12 +102,12 @@ Let's practice this below.
    :answer_b: goalReached()
    :answer_c: play()
    :answer_d: getScore()
-   :correct: c
+   :correct: d
    :random:
    :feedback_a: The ``getPoints()`` method is given to you to get the points for a level.
    :feedback_b: The ``goalReached()`` method is given to you to check if the goal is reached for a level.
    :feedback_c: The ``play()`` method is given to you to simulate the play of the game.
-   :feedback_d: The ``getScore()`` method is the one you will write for part a.
+   :feedback_d: Correct, the ``getScore()`` method is the one you will write for part a.
 
    Which method are you asked to write for part a?
 
