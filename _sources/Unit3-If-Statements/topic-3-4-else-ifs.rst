@@ -528,7 +528,7 @@ In a game like Adventure, else if statements can be used to respond to commands 
       public void test5()
       {
           String code = getCode();
-          int num = countOccurences(code, "else {");
+          int num = countOccurences(code, "else") - countOccurences(code, "else if");
           boolean passed = num >= 1;
 
           getResults("1", "" + num, "Number of else statements", passed);
