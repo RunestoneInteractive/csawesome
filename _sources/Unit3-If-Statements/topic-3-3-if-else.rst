@@ -417,6 +417,149 @@ You can use curly braces (``{}``) to enclose a nested if and have the else claus
 In fact many experienced Java programmers `always` use curly braces, even when
 they are not technically required to avoid this kind of confusion.
 
+Math.random() in if Statements
+-------------------------------
+
+The ``Math.random()`` method returns a random number between 0.0 and 1.0.  You can use this method with ``if`` statements to simulate a coin flip or an event occuring a certain percentage of the time. For example, if you want to simulate a coin flip, you can check if the random number is less than 0.5 (halfway between 0 and 1) to simulate a 50% chance of heads or tails:
+
+.. code-block:: java
+
+    if (Math.random() < 0.5)
+    {
+        System.out.println("Heads");
+    }
+    else
+    {
+        System.out.println("Tails");
+    }
+
+If you want to simulate an event occuring 90% of the time, you can check the random number to see if it is less than 0.9 (90% of the way between 0 and 1):
+
+.. code-block:: java
+
+    if (Math.random() < 0.9)
+    {
+        // 90% of the time
+        System.out.println("Event happened");
+    }
+    else 
+    {
+        // 10% of the time
+        System.out.println("Event did not happen");
+    }
+
+
+
+|Exercise| **Check your understanding**
+
+.. mchoice:: mcq-rnd-ifs
+   :practice: T
+   
+   The weather report says there is approximately 25% chance of rain today. Which of the following if statements would print Rain or No Rain to simulate a day with the correct percentages following the weather report? 
+
+   -  .. code-block:: java
+        
+         if (Math.random() < 0.25) { System.out.println("Rain"); }
+       
+      + Correct! This code will print "Rain" 25% of the time.
+
+   -  .. code-block:: java
+        
+         if (Math.random() > 0.75) { System.out.println("Rain"); }
+
+      + Correct. This code will print "Rain" 25% (1 - .75) of the time.
+
+   -  .. code-block:: java
+       
+         if (Math.random() > 0.25) { System.out.println("Rain"); }
+
+      - Incorrect. This code will print "Rain" 75% of the time.
+
+   -  .. code-block:: java
+        
+         if (Math.random() < 0.75) { System.out.println("No Rain"); }
+
+      + Correct! This code will print "No Rain" 75% of the time, so it will rain 25% of the time.
+
+
+|CodingEx| **Coding Exercise**
+
+.. activecode:: randomShapes
+    :language: java
+    :autograde: unittest
+    :datafile: turtleClasses.jar
+
+    Add an if/else statement that uses Math.random() to do a coin flip to decide whether to call yertle.turnRight() or yertle.turnLeft. Run the code to see the turtle draw a random shape.
+    ~~~~
+    import java.util.*;
+    import java.awt.*;
+
+    public class RandomTurns
+    {
+        public static void main(String[] args)
+        {
+            World world = new World(500,400);
+            Turtle yertle = new Turtle(world);
+
+            // This is a loop that runs 10 times (you will learn to write loops in
+            // Unit 4)
+            for(int i = 1; i <= 10; i++)
+            {
+                yertle.forward(20);
+
+                // Write an if/else statement that uses 
+                // Math.random() to do a coin flip (50%) to choose 
+                // between yertle.turnRight() or turnLeft()
+
+
+
+
+
+
+            } // end of loop
+            world.show(true);
+        }
+    }
+    ====
+    import static org.junit.Assert.*;
+
+    import org.junit.*;
+
+    import java.io.*;
+
+    public class RunestoneTests extends CodeTestHelper
+    {
+        public RunestoneTests()
+        {
+            super("RandomTurns");
+        }
+
+       @Test
+       public void testCodeContainsIf()
+       {
+           boolean ifCheck = checkCodeContains("if", "if");
+           assertTrue(ifCheck);
+       }
+       @Test
+       public void testCodeContainsElse()
+       {
+           boolean ifCheck2 = checkCodeContains("else", "else");
+           assertTrue(ifCheck2);
+       }
+       @Test
+       public void testCodeContainsRandom()
+       {
+           boolean ifCheck2 = checkCodeContains("Math.Random()", "Math.random()");
+           assertTrue(ifCheck2);
+       } 
+       @Test
+       public void testCodeContains5()
+       {
+           boolean ifCheck2 = checkCodeContains(".5", ".5");
+           assertTrue(ifCheck2);
+       } 
+    }
+
 |Groupwork| Programming Challenge : 20 Questions
 ------------------------------------------------
 
