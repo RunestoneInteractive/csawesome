@@ -1060,7 +1060,7 @@ Be careful not to jump out of loop too early when you are looking for a value in
 
 .. |replit| raw:: html
 
-   <a href= "https://firewalledreplit.com/@BerylHoffman/SpellChecker1" target="_blank">replit</a>
+   <a href= "https://replit.com/@BerylHoffman/SpellChecker1" target="_blank">replit</a>
 
 .. |input files| raw:: html
 

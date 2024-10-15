@@ -597,9 +597,13 @@ This would be a good project to work together in pairs, and switch drivers (who 
 
 .. |repl template| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Challenge1-6-Average-Template#Main.java" target="_blank">repl template</a>
+   <a href="https://replit.com/@BerylHoffman/Challenge1-6-Average-Template#Main.java" target="_blank">replit template</a>
 
-Your teacher may suggest that you use a Java IDE like |repl| for this challenge so that you can use input to get these values using the |Scanner|. Here is a |repl template| that you can use to get started if you want to try the challenge with input.
+.. |JuiceMind template| raw:: html
+
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/5f00d71e-df8f-448f-a767-ed49e7af6f05#cb460a02-de03-4328-b310-ba057cb47a39" target="_blank">JuiceMind template</a>
+
+Your teacher may suggest that you use a different Java IDE for this challenge so that you can use input to get these values using the |Scanner|, for example with this |JuiceMind template| or |repl template| that you can use if you want to try the challenge with input.
 
 
 .. |Unicode| raw:: html

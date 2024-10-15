@@ -124,7 +124,7 @@ different **method signature**, where it requires a different number or type of 
 
 |CodingEx| **Coding Exercise**
 
-(If the code below does not work in your browser, you can also use the Turtle code at this |repl link| (refresh page after forking and if it gets stuck) or download the files |github| to use in your own IDE.)
+(If the code below does not work in your browser, you can also use the Turtle code in |JuiceMind| or |replit| or download the files |github| to use in your own IDE.)
 
 
 .. activecode:: TurtleTestMethods1
@@ -462,7 +462,7 @@ Try this |visualization| to see this code in action.
     :align: left
     :alt: simple house
 
-This creative challenge is fun to do collaboratively in pairs. Design a house and have the turtle draw it with different colors below (or with this |repl link|). Can you add windows and a door? Come up with your own house design as a team.
+This creative challenge is fun to do collaboratively in pairs. Design a house and have the turtle draw it with different colors below (or on |JuiceMind| or |replit|). Can you add windows and a door? Come up with your own house design as a team.
 
 To draw a window, you will need to call ``penUp`` to walk the turtle into position, for example:
 
@@ -474,9 +474,14 @@ To draw a window, you will need to call ``penUp`` to walk the turtle into positi
 
 It may help to act out the code pretending you are the turtle. Remember that the angles you turn depend on which direction you are facing, and the turtle begins facing up.
 
-.. |repl link| raw:: html
+.. |JuiceMind| raw:: html
 
-   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank">replit.com link</a>
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/76a43c53-53ab-43d4-8ac5-4feadcd5c7f0#f53a5f87-d51e-4f70-802d-9e5a24023d4c" target="_blank" style="text-decoration:underline">JuiceMind</a>
+
+
+.. |replit| raw:: html
+
+   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank">replit</a>
 
 
 .. activecode:: challenge2-4-TurtleHouse

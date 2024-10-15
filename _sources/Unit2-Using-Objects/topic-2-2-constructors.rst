@@ -7,9 +7,13 @@
 .. index::
    pair: class; constructor
 
-.. |repl link| raw:: html
+.. |JuiceMind| raw:: html
 
-   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank" style="text-decoration:underline">replit.com link</a>
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/0994743d-f2f4-4c7b-9060-c2c9ff9ddcb1#fb8aa8d3-66b8-4c2d-b64f-c078e80cc53c" target="_blank" style="text-decoration:underline">JuiceMind</a>
+
+.. |replit| raw:: html
+
+   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank" style="text-decoration:underline">replit</a>
 
 .. |github| raw:: html
 
@@ -150,7 +154,7 @@ There is another ``Turtle`` constructor that places the turtle at a certain (x,y
 
     Try changing the code below to create a ``World`` object with 300x400 pixels. Where is the turtle placed by default? What parameters do you need to pass to the ``Turtle`` constructor to put the turtle at the top right corner? Experiment and find out. What happens if you mix up the order of the parameters?
 
-    (If the code below does not work in your browser, you can also use the ``Turtle`` code at this |repl link| (refresh page after forking and if it gets stuck) or download the files |github| to use in your own IDE.)
+    (If the code below does not work in your browser, you can also use the ``Turtle`` code on |JuiceMind| or |replit| or download the files |github| to use in your own IDE.)
     ~~~~
     import java.awt.*;
     import java.util.*;

@@ -386,40 +386,50 @@ Here is a flowchart for a conditional with 3 options like in the code above.
 
    <a href="https://adventuregamers.com/walkthrough/full/colossal-cave" target="_blank" style="text-decoration:underline">walkthrough</a>
 
-.. |repl link| raw:: html
+.. |JuiceMind| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Adventure#Main.java" target="_blank" style="text-decoration:underline">repl link</a>
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/54bfe3f4-f112-4062-8d7d-a033b2bf09b6#079f4341-137a-497f-b874-553ababd627a" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
+.. |replit| raw:: html
 
-We encourage you to work in pairs for this challenge which is on replit.com (you will need an account there if you want to save your version).
+   <a href="https://replit.com/@BerylHoffman/Adventure#Main.java" target="_blank" style="text-decoration:underline">replit</a>
 
 One of the first games coded for early computers in the 1970s was called |Colossal Cave Adventure|. It was a text-based interactive fiction game where you had to make your way through an elaborate cave. The program only understood one word or phrase commands like north, south, enter, take, etc. You can try |playing adventure| recreated online following some of the commands in this |walkthrough|. Part of the challenge is finding the commands that the code will understand.
 
 In a game like Adventure, else if statements can be used to respond to commands from the user like n, s, e, w.
 
-1. Try the program below or with this |repl link|. This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north.
+1. Try the program below or in an interactive input IDE like |JuiceMind| or |replit|. This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north.
 
-2. Add in **else if** statements to go in the directions of "s" for south, "e" for east, "w" for west, and an else statement that says "You can't go in that direction". Be creative and come up with different situations in each direction.
+2. Add in **else if** statements to go in the directions of "s" for south, "e" for east, "w" for west, and an else statement that says "You can't go in that direction". Be creative and come up with different situations in each direction. You will need to change the input below the code to s or e or w and then run to test these branches. How many test-cases are needed to test all branches of your code? If your class has time, your teacher may ask you to expand this game further or to come up with a different adventure location.
 
-2. How many test-cases are needed to test all branches of your code?
-
-3. If your class has time, your teacher may ask you to expand this game further or to come up with a different adventure location.
-
-
-.. raw:: html
-
-    <iframe height="650px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Adventure?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 .. activecode:: challenge3-4-ElseIf-Adventure-autograde
   :language: java
   :autograde: unittest
+  :stdin: n
 
-  Copy and paste your all of your code from replit.com and run to see if it passes the autograder tests. Include the link to your replit.com code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
+  This is a very simple adventure game that lets the user move in 4 different directions. Right now, it only lets the user move north. Add in **else if** statements to go in the directions of "s" for south, "e" for east, "w" for west, and an else statement that says "You can't go in that direction". Be creative and come up with different situations in each direction. You can change the initial location of the game and add more nested if statements to make the game more complex. 
   ~~~~
-    // Copy in your link to your code on replit.com here:
-    // Copy in all of your code from replit.com below (include import and public class
-    // Main)
+  import java.util.Scanner;
 
+  public class Adventure 
+  {
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("\n\n You are on an island surrounded by water.\n There is a path to the woods to the north, the sea to the south, and a beach shack to the east. \n Which way do you want to go (n,e,s,w)?");
+        String command = scan.next(); // use nextLine() in your own IDE
+        if (command.equals("n")) 
+        {
+            System.out.println("You enter the forest and hear some rustling. \nThere may be tigers here or maybe it's just monkeys.");
+        }
+        // Add else-ifs for s, e, w, and an else for any other input. Be creative!
+        
+        
+        System.out.println("End of adventure!");   
+        scan.close();
+     }
+  }
   ====
   import static org.junit.Assert.*;
 
@@ -431,7 +441,7 @@ In a game like Adventure, else if statements can be used to respond to commands 
   {
       public RunestoneTests()
       {
-          super("Main", input1.replaceAll(" ", "\n")); // For Book
+         // super("Main", input1.replaceAll(" ", "\n")); // For Book
       }
 
       private static int goal = 5;
@@ -445,7 +455,8 @@ In a game like Adventure, else if statements can be used to respond to commands 
       @Test
       public void test1()
       {
-          String input = input1.replaceAll(" ", "\n");
+          //String input = input1.replaceAll(" ", "\n");
+          String input = input1;
           String output = getMethodOutputWithInput("main", input);
           output1 = output;
 
@@ -465,15 +476,19 @@ In a game like Adventure, else if statements can be used to respond to commands 
       @Test
       public void test2()
       {
-          String input = input2.replaceAll(" ", "\n");
+          //String input = input2.replaceAll(" ", "\n");
+          String input = input2;
+
           String output = getMethodOutputWithInput("main", input);
           output2 = output;
 
-          input = input3.replaceAll(" ", "\n");
+          //input = input3.replaceAll(" ", "\n");
+          input = input3;
           output = getMethodOutputWithInput("main", input);
           output3 = output;
 
-          input = input4.replaceAll(" ", "\n");
+          //input = input4.replaceAll(" ", "\n");
+          input = input4;
           output = getMethodOutputWithInput("main", input);
           output4 = output;
 
@@ -483,7 +498,8 @@ In a game like Adventure, else if statements can be used to respond to commands 
 
           if (output1 == null)
           {
-              input = input1.replaceAll(" ", "\n");
+              //input = input1.replaceAll(" ", "\n");
+              input = input1;
               output1 = getMethodOutputWithInput("main", input);
           }
 

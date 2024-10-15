@@ -72,7 +72,6 @@ Every method call is followed by parentheses. The parentheses ``()`` after metho
 
 
 After you put the mixed up code in order above, type in the same code below to make the turtle draw a 7.
-(If the code below does not work for you, you can also use the ``Turtle`` code at this |repl link| (refresh page after forking and if it gets stuck) or download the files |github| to use in your own IDE.)
 
 .. activecode:: TurtleDraw7
     :language: java
@@ -371,7 +370,7 @@ Before you call a method from ``main`` or from outside of the current class, you
 |Groupwork| Programming Challenge : Draw a Letter
 -------------------------------------------------
 
-Working in pairs, use the area below (or the |repl link|) to use a turtle to draw a simple block-style letter or number that uses just straight lines (no curves or diagonals). It could be one of your initials or a number from today's date.
+Working in pairs, use the area below (or on |JuiceMind| or |replit|) to use a turtle to draw a simple block-style letter or number that uses just straight lines (no curves or diagonals). It could be one of your initials or a number from today's date.
 
 It may help to act out the code pretending you are the turtle. Remember that which way you turn depends on which direction you are facing, and the turtle begins facing north (towards the top of the page).
 
@@ -384,9 +383,13 @@ Here are some simple turtle methods that you can use:
 - ``penUp()``
 - ``penDown()``
 
-.. |repl link| raw:: html
+.. |JuiceMind| raw:: html
 
-   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank">replit.com link</a>
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/0b7dfa62-2c9a-4914-8c1e-b49e6ea2fee7#53fcf7f6-0de1-46bb-a4b0-0c6475b96f19" target="_blank" style="text-decoration:underline">JuiceMind</a>
+
+.. |replit| raw:: html
+
+   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle#Main.java" target="_blank">replit</a>
 
 You may notice that it is challenging to have your turtle draw with these simple methods. In the next lesson, we will use more complex ``Turtle`` methods where you can indicate how many steps to take or what angle to turn that will make drawing a lot easier!
 

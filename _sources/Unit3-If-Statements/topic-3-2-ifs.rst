@@ -497,16 +497,18 @@ We encourage you to work in pairs for this challenge. Come up with 8 responses t
        }
    }
 
-.. |repl version| raw:: html
+.. |JuiceMind| raw:: html
 
-    <a href="https://firewalledreplit.com/@BerylHoffman/Magic8BallTemplate#Main.java" target="_blank" style="text-decoration:underline">repl version</a>
+    <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/feaeda26-4591-4523-bbc2-ad6e8eca2633#abe979a9-45e0-455d-8a0d-1dde8c8a5d4e" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
 
-Here's a |repl version| that uses the Scanner class to first have the user ask a question. You can click on Open in Replit below, and click on Fork to make your own copy, and add your code in from above to try your code with user input.
+.. |replit| raw:: html
 
-.. raw:: html
+    <a href="https://replit.com/@BerylHoffman/Magic8BallTemplate#Main.java" target="_blank" style="text-decoration:underline">replit</a>
 
-    <iframe height="650px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Magic8BallTemplate?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+You can make this code more interactive by using the ``Scanner`` class to have the user ask a question first; you can try your code with input in |JuiceMind| or |replit| or a local IDE.
+
 
 Summary
 -------------------

@@ -397,29 +397,48 @@ test condition and using the incorrect relational operator ``<`` or ``<=``.
 Input-Controlled Loops
 ----------------------
 
-.. |Magpie chatbot lab on replit.com| raw:: html
+You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used when you don't know how many times the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. For example, in the Magpie chatbot lab code below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2#Main.java" target="_blank">Magpie chatbot lab on replit.com</a>
+.. code-block:: java
 
-You can use a ``while`` loop to repeat the body of the loop a certain number of times as shown above.  However, a ``while`` loop is typically used when you don't know how many times the loop will execute. It is often used for a **input-controlled loop** where the user's input indicates when to stop. For example, in the |Magpie chatbot lab on replit.com| below, the while loop stops when you type in "Bye". The stopping value is often called the **sentinel value** for the loop. Notice that if you type in "Bye" right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a ``return`` statement that makes it immediately return from the method.
+    Scanner in = new Scanner(System.in);
+    String statement = in.nextLine();
+    while (!statement.equals("Bye"))
+    {
+        System.out.println(getResponse(statement));
+        statement = in.nextLine();
+    }
 
-.. raw:: html
 
-    <iframe height="700px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v2?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe><p>
+.. |JuiceMind| raw:: html
 
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/fce2f5ea-b4fe-4acd-9190-f24c22891a27#9c210139-7c72-441f-88c8-d68482488aa1" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
-|CodingEx| **Coding Exercise**
+.. |replit| raw:: html
 
-.. |numbers on replit.com| raw:: html
+   <a href="https://replit.com/@BerylHoffman/Average#Main.java" target="_blank">replit</a>
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Average#Main.java" target="_blank">numbers on replit.com</a>
+Here's another example of an input-conrolled loop, which you can try online with |JuiceMind| or |replit|. This code calculates the average of positive numbers. The number -1 is used as the **sentinel value**. The while loop will run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Remember that skipping step 3 will often lead to an infinite loop!
 
-Here's another example with |numbers on replit.com|. This code calculates the average of positive numbers, but it is missing the condition for the loop on line 14.  Let's use -1 as the **sentinel value**. Add the condition to  the while loop to run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Try commenting out line 19 with // to see what happens (note there is a stop button at the top!).
+.. code-block:: java
 
-.. raw:: html
+    // 1. initialize the loop variable (get the first number)
+    System.out.print("Please enter a number to average in or -1 to stop: ");
+    number = scan.nextInt();
 
-    <iframe height="700px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Average?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
+    // 2. test the loop variable (against sentinel value)
+    while (number != -1) 
+    {
+      sum += number; // add number to sum
+      count++; // count the number
+      // 3. Change the loop variable (get a new number)
+      System.out.print("Please enter a number to average in or -1 to stop: ");
+      number = scan.nextInt();
+    }
+    System.out.println(count);
+    // calculate average
+    average = (double) sum/count;
+    System.out.println("The average is " + average);
 
 There are standard algorithms that use loops to compute the sum or average like above, or determine the minimum or maximum value entered, or the frequency of a certain condition. You can also use loops to identify if some integers are evenly divisible by other integers or identify the individual digits in an integer. We will see a lot more of these algorithms in Unit 6 with loops and arrays.
 
@@ -450,27 +469,50 @@ When you finish and run your program, what is a good guessing strategy for guess
 
    <a href="https://www.w3schools.com/java/java_user_input.asp" target="_blank">Scanner class</a>
 
-.. |replit.com| raw:: html
+.. |JuiceMindGuess| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Guessing-Game#Main.java" target="_blank">replit.com</a>
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/fce2f5ea-b4fe-4acd-9190-f24c22891a27#bb8a2ea3-cfb8-401f-9f58-62605edf4106" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
-For this project, you will need to use the |Scanner class| for input and |replit.com| or another IDE of your choice.
+.. |replitGuess| raw:: html
 
-.. raw:: html
+   <a href="https://replit.com/@BerylHoffman/Guessing-Game#Main.java" target="_blank">replit</a>
 
-    <iframe height="600px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/Guessing-Game?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
+For this project, you will need to use the |Scanner class| for input and |JuiceMindGuess| or |replitGuess| or another IDE of your choice.
 
 .. activecode:: challenge4-1-loop-GuessingGame-autograde
   :language: java
   :autograde: unittest
 
-  Copy and paste all of your code from your replit.com and run to see if it passes the autograder tests. Include the link to your replit.com code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
+  Complete the code for the guessing game below. If you did this code in |JuiceMindGuess| or |replitGuess| or your own IDE, you can paste in your code to see if it passes the autograder tests. Note that this code will only run with the autograder's input and will not ask the user for input.
   ~~~~
-    // Copy in your link to your code on replit.com here:
-    // Copy in all of your code from replit.com below (include import and public class
-    // Main)
+  import java.util.Scanner;
 
+  public class Main 
+  {
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        // Choose a random number from 0-100 
+        
+
+        // Ask the user to guess a number from 0 to 100 
+        // Get the first guess using scan.nextInt();
+    
+
+        // Loop while the guess does not equal the random number,
+
+        // If the guess is less than the random number, print out "Too low!"
+    
+        // If the guess is greater than the random number, print out "Too high!"
+    
+        // Get a new guess (save it into the same variable)
+    
+
+        // Print out something like "You got it!"
+
+
+    }
+  }
   ====
   import static org.junit.Assert.*;
 

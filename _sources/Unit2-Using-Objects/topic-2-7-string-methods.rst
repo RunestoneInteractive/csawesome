@@ -446,16 +446,16 @@ Here is a list of common mistakes made with Strings.
 
 Create a program that takes a word and transforms it to Pig Latin using String methods. You may need the word's length, a substring that does not include the first letter, and a substring that is just the first letter (you can get the ith letter of a string using substring(i,i+1) so for example the letter at index 3 would be substring(3,4)).
 
-.. |repl| raw:: html
 
-   <a href="https://replit.com" target="_blank">replit.com</a>
+.. |JuiceMind| raw:: html
 
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/4c344344-c426-4ef9-949b-14bedc3d2b4a#c6d0509b-69a9-4910-bf0e-d7fae497fbf1" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
 .. |Scanner| raw:: html
 
    <a href="https://www.w3schools.com/java/java_user_input.asp" target="_blank">Scanner class</a>
 
-Your teacher may ask you to create this program in a Java IDE like |repl| so that you can use input to read in the word (see input examples using the |Scanner|).
+Your teacher may ask you to create this program in a Java IDE  that can use input to read in the word, for example in |JuiceMind| using the |Scanner|.
 
 
 .. activecode:: challenge2-7-PigLatin

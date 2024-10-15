@@ -309,12 +309,16 @@ In this activity, the chatbot is altered to look not only for keywords, but also
 
 Look at the code. See how it handles “I want to” and you/me statements.
 
+.. |JuiceMind| raw:: html
+
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/3cea51af-9a0a-4d90-ad6e-f3efeee44eaa" target="_blank">JuiceMind</a>
+
 .. |replit.com version 4| raw:: html
 
    <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v4#Main.java" target="_blank">replit.com version 4</a>
 
 
-Then add two new methods, ``transformIWantStatement`` and ``transformIYouStatement``, and calls to each as described below. Alter the code either above in the active code window or on |replit.com version 4| or in an IDE of your choice:
+Then add two new methods, ``transformIWantStatement`` and ``transformIYouStatement``, and calls to each as described below. Alter the code either above in the active code window or on |JuiceMind| or |replit.com version 4| or in an IDE of your choice:
 
 * In a method ``transformIWantStatement``, have it respond to “I want something” statements with “Would you really be happy if you had something?” You can use the already written ``transformIWantToStatement`` method as a guide. In doing this, you need to be careful about where you place the call to the method so it calls the right one. Test with the following:
 

@@ -572,14 +572,12 @@ If you want to simulate an event occuring 90% of the time, you can check the ran
 
    <a href="https://en.akinator.com/" style="text-decoration:underline" target="_blank">Akinator</a>
 
-We encourage you to work in pairs for this challenge which is on replit.com (you will need an account there if you want to save your version).
-
 Have you ever played 20 Questions? 20 Questions is a game where one person thinks of an object and the other players ask up to 20 questions to guess what it is.
 
 There is great online version called |Akinator| that guesses whether you are thinking of a real or fictional character by asking you questions. Akinator is a simple Artificial Intelligence algorithm that uses a decision tree of yes or no questions to pinpoint the answer.
 Although Akinator needs a very large decision tree, we can create a  guessing game for animals using a much smaller number of if-statements.
 
-The |Animal Guessing program| below uses the following decision tree:
+The Animal Guessing program that we will make uses the following decision tree:
 
 .. figure:: Figures/decision-tree.png
     :width: 300px
@@ -588,18 +586,22 @@ The |Animal Guessing program| below uses the following decision tree:
 
     Figure 2: Animal Guessing Game Decision Tree
 
-.. |Animal Guessing program| raw:: html
+.. |JuiceMind| raw:: html
 
-    <a href="https://firewalledreplit.com/@BerylHoffman/GuessAnimal#Main.java" target="_blank" style="text-decoration:underline">Animal Guessing program</a>
+    <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/f99c4277-4ac8-4daf-b7b7-fb3b81cf380a#fdf19797-2354-4be2-9ccc-8c68ac4203ad" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
-1. Try the |Animal Guessing program| below and run it a couple times thinking of an animal and answering the questions with y or n for yes or no. Did it guess your animal? Probably not! It's not very good. It can only guess 3 animals. Let's try to expand it!
+.. |replit| raw:: html
 
-2. In the very last else clause, the program knows that it is not a mammal and it guesses a bird. Let's add to that part. (You may want to click on Open in replit.com on the top right of the window and then click on Sign up or Log in to save your work). Instead of saying "I guess a bird! Click on run to play again.", change it to ask a question that distinguishes between birds and reptiles (for example does it fly?). Then, get their response and use an if statement to guess "bird" or "turtle" (or another reptile). For example, here's how we decided to choose between a dog or an elephant. We asked the question "Is it a pet?", got the response, and then with an if statement on the y/n answer we determined dog or elephant. You would use similar code to distinguish between a bird and a turtle. Run your code and test both possibilities!
+    <a href="https://replit.com/@BerylHoffman/GuessAnimal#Main.java" target="_blank" style="text-decoration:underline">replit</a>
+
+1. Try the Animal Guessing game below. In Runestone, you need to provide the input below the code before you run it. It is set to answer the questions with y and y. Run the code to see the result. Change the input below the coding window to y n and n to guess the other animals. It can only guess 3 animals. Let's add more! To see this program in an interactive input IDE, try it in |JuiceMind| or |replit| or your local IDE (where you should change the lines with ``scan.next()`` to ``scan.nextLine()``).
+
+2. In the very last else clause, the program knows that it is not a mammal and it guesses a bird. Let's add to that part. Instead of saying "I guess a bird! Click on run to play again.", change it to ask a question that distinguishes between birds and reptiles (for example does it fly?). Then, get their response and use an if statement to guess "bird" or "turtle" (or another reptile). For example, here's how we decided to choose between a dog or an elephant. We asked the question "Is it a pet?", got the response, and then with an if statement on the y/n answer we determined dog or elephant. You would use similar code to distinguish between a bird and a turtle. Run your code and test both possibilities!
 
 .. code-block:: java
 
    System.out.println("Is it a pet (y/n)?");
-   answer = scan.nextLine();
+   answer = scan.next(); // or nextLine() in your own IDE
    if (answer.equals("y"))
    {
        System.out.println("I guess a dog! Click on run to play again.");
@@ -609,27 +611,54 @@ The |Animal Guessing program| below uses the following decision tree:
        System.out.println("I guess an elephant! Click on run to play again.");
    }
 
-3. Did you notice that when it asked "Is it a pet?" and you said "y", it immediately guessed "dog"? What if you were thinking of a cat? Try to come up with a question that distinguishes dogs from cats and put in code in the correct place (in place of the code that prints out "I guess a dog") to ask the question, get the answer, and use an if/else to guess cat or dog. Run your code and test both possibilities!
+3. Did you notice that when it asked "Is it a pet?" and you said "y", it immediately guessed "dog"? What if you were thinking of a cat? Try to come up with a question that distinguishes dogs from cats and put in code in the correct place (in place of the code that prints out "I guess a dog") to ask the question, get the answer, and use an if/else to guess cat or dog. Run your code and test both possibilities by adding more input.
 
 4. How many animals can your game now guess? How many test-cases are needed to test all branches of your code?
 
 5. If your class has time, your teacher may ask you to expand this game or to create a similar game to guess something else like singers or athletes. Spend some time planning your questions on paper and drawing out the decision tree before coding it.
 
-.. raw:: html
-
-    <iframe height="650px" width="100%" style="max-width:90%; margin-left:5%" src="https://firewalledreplit.com/@BerylHoffman/GuessAnimal?lite=true#Main.java" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-After you complete your code on replit.com, paste in your code below to run it through the auto-grader. Also include a link to your code on replit.com in comments.
 
 .. activecode:: challenge3-3-IfElse-20Questions-autograde
   :language: java
   :autograde: unittest
+  :stdin: y y
 
-  Copy and paste your code from your replit.com and run to see if it passes the autograder tests. Include the link to your replit.com code in comments. Note that this code will only run with the autograder's input and will not ask the user for input.
+  The code below is a simple 20 questions game that guesses an animal. In Runestone, you need to provide the input below the code before you run it. It is set to answer the questions with y and y. Run the code to see the result. Change the input to guess the other animals. It can only guess 3 animals. Let's add more!
   ~~~~
-    // Copy in your link to your code on replit.com here:
-    // Copy in all of your code from replit.com below (include import and public class
-    // Main)
+  import java.util.Scanner;
+
+  public class GuessAnimal 
+  {
+    public static void main(String[] args) 
+    {
+        System.out.println("\n\nLet's play 20 questions. Choose an animal and I will try to guess it!");
+        Scanner scan = new Scanner(System.in);
+    
+        System.out.println("Is it a mammal (y/n)?");
+        String answer = scan.next(); // in other IDEs, use nextLine()
+        if (answer.equals("y")) 
+        {
+        System.out.println("Is it a pet (y/n)?");
+        answer = scan.next();
+        if (answer.equals("y")) 
+        {
+            System.out.println("I guess a dog! Click on run to play again.");
+        }
+        else 
+        { 
+            
+            System.out.println("I guess an elephant! Click on run to play again.");   
+        }
+        }      
+        else { // not a mammal
+        
+            System.out.println("I guess a bird! Click on run to play again.");
+        
+        }      
+    
+
+    }
+  }
 
   ====
   import static org.junit.Assert.*;
@@ -640,11 +669,6 @@ After you complete your code on replit.com, paste in your code below to run it t
 
   public class RunestoneTests extends CodeTestHelper
   {
-      public RunestoneTests()
-      {
-          super("Main", input1.replaceAll(" ", "\n")); // Use in book
-      }
-
       private static int goal = 5;
 
       private static String input1 = "y y y y y y y y y y y y y y y y y y y y y y y y y y";
@@ -654,7 +678,8 @@ After you complete your code on replit.com, paste in your code below to run it t
       @Test
       public void test1()
       {
-          String input = input1.replaceAll(" ", "\n");
+          //String input = input1.replaceAll(" ", "\n");
+          String input = input1;
           String output = getMethodOutputWithInput("main", input);
           output1 = output;
 
@@ -674,13 +699,15 @@ After you complete your code on replit.com, paste in your code below to run it t
       @Test
       public void test2()
       {
-          String input = input2.replaceAll(" ", "\n");
+          //String input = input2.replaceAll(" ", "\n");
+          String input = input2;
           String output = getMethodOutputWithInput("main", input);
           output2 = output;
 
           if (output1 == null)
           {
-              input = input1.replaceAll(" ", "\n");
+              //input = input1.replaceAll(" ", "\n");
+                input = input1;
               output1 = getMethodOutputWithInput("main", input);
           }
 
@@ -722,10 +749,10 @@ After you complete your code on replit.com, paste in your code below to run it t
       public void test5()
       {
           String code = getCode();
-          int num = countOccurences(code, "scan.nextLine()");
+          int num = countOccurences(code, "scan.next");
           boolean passed = num >= 4;
 
-          getResults("4+", "" + num, "Number of scan.nextLine()", passed);
+          getResults("4+", "" + num, "Number of scan.next", passed);
           assertTrue(passed);
       }
   }

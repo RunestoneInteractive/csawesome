@@ -145,7 +145,7 @@ This is the write code problems associated with the mixed up code problems.
         :practice: T
         :autograde: unittest
 
-        Write code that tests if x is between 1 and 10, and prints ``1 <= x <= 10`` or ``x is not in range``.
+        Write code that tests if x is between 1 and 10 inclusive, and prints ``1 <= x <= 10`` or ``x is not in range``.
         ~~~~
         public class Test1
         {

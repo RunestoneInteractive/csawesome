@@ -396,9 +396,10 @@ What if you wanted to print out a double quote " character? Since the double quo
 
 Have you ever played MAD LIBS? In this game, you first choose a bunch of words without looking at the story and then those words are filled into the story to make it sound very wacky! Fill in the variables below with Strings for each word, and then run to see the wacky story.
 
-.. |repl| raw:: html
 
-   <a href="https://replit.com" target="_blank">replit.com</a>
+.. |JuiceMind| raw:: html
+
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/31e68cdd-7147-41d8-9f08-1d526c382c89#4caf97eb-ae16-4498-afce-41e1dfd4f164" target="_blank" style="text-decoration:underline">JuiceMind</a>
 
 
 .. |Scanner| raw:: html
@@ -406,14 +407,14 @@ Have you ever played MAD LIBS? In this game, you first choose a bunch of words w
    <a href="https://www.w3schools.com/java/java_user_input.asp" target="_blank">Scanner class</a>
 
 
-Then, working in pairs, come up with another silly story that uses at least 5 new String variables. When you're done, try another team's mad libs code. Your teacher may ask you to create this program in a Java IDE like |repl| so that you can use input to read in the words (see input examples using the |Scanner|).
+Then, working in pairs, come up with another silly story that uses at least 5 new String variables. When you're done, try another team's mad libs code. Your teacher may ask you to create this program in a Java IDE that can do input for example this coding exercise on |JuiceMind| using the |Scanner| to read in input into the variables.
 
 .. activecode:: challenge2-6-MadLibs
    :language: java
    :autograde: unittest
    :practice: T
 
-   If you used replit.com for this challenge, copy the url of your repl here to turn in.
+   Replace the nulls below with silly words to create a silly poem. Run the code to see the poem. Then, create your own silly story using 5 more String variables.
    ~~~~
    public class MadLibs1
    {

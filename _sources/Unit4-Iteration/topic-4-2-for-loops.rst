@@ -408,9 +408,7 @@ Turtle Loops
 
 |CodingEx| **Coding Exercise**
 
-Do you remember when we used the turtle objects to draw shapes? To create a square without loops we had to repeat code to go forward and turn 90 degrees to the right 4 times like below. Can you change the code below to remove the repeated lines of code and use a loop to draw 4 sides of the square? Did you notice that the code becomes a lot shorter? You should only need 1 call to forward and 1 call to turn in the loop. Whenever you find yourself repeating code, try to use a loop instead!
-
-(If the code below does not work for you, you can copy the code into  this |repl link| (refresh page after forking and if it gets stuck) or download the files |github| to use in your own IDE.)
+Do you remember when we used the turtle objects to draw shapes? To create a square without loops we had to repeat code to go forward and turn 90 degrees to the right 4 times like below. Can you change the code below to remove the repeated lines of code and use a loop to draw 4 sides of the square? Did you notice that the code becomes a lot shorter? You should only need 1 call to forward and 1 call to turn in the loop. Whenever you find yourself repeating code, try to use a loop instead! 
 
 .. activecode:: TurtleSquare
     :language: java
@@ -507,11 +505,15 @@ Do you remember when we used the turtle objects to draw shapes? To create a squa
 |Groupwork| Programming Challenge : Turtles Drawing Shapes
 ----------------------------------------------------------
 
-.. |repl link| raw:: html
+.. |replit| raw:: html
 
-   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle" target="_blank">replit link</a>
+   <a href="https://replit.com/@BerylHoffman/Java-Swing-Turtle" target="_blank">replit</a>
 
-In the last exercise, you used a for-loop to have the turtle draw a square. Use the Active Code window below or this |repl link| to have yertle draw the following shapes using loops. We encourage you to work in pairs.
+.. |JuiceMind| raw:: html
+
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/2845c671-4e6c-479c-b077-b3341795c4de#4fa9f6cd-7cf3-4249-b690-2a3bbe5f1c32#22be58da-ec94-44a0-8900-a4bd7e702852" target="_blank">JuiceMind</a>
+
+In the last exercise, you used a for-loop to have the turtle draw a square. Use the Active Code window below to have yertle draw the following shapes using loops. We encourage you to work in pairs. If the turtle code is too slow in the Active Code window, try it in |JuiceMind| or |replit| or download the files |github| to use in your own IDE.
 
 1. Have yertle draw an equilateral triangle using a loop. How many times should the loop run? Remember that it ran 4 times for a square, so how many for a triangle? What angle should you use for the turns? One way to figure this out is to notice that to complete a shape, all the exterior angles should add up to 360 degrees. So, for a square 4x90 = 360.
 

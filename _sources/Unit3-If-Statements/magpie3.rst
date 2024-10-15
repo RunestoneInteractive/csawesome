@@ -162,11 +162,15 @@ Take a look at the ``findKeyword`` method below.  It has a ``while`` loop in it 
       return -1;
    }
 
+.. |JuiceMind| raw:: html
+
+   <a href="https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/242a01fa-1755-4acd-b20f-fea91a213d1c" target="_blank">JuiceMind</a>
+
 .. |replit.com version 3| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v3#Main.java" target="_blank">replit.com version 3</a>
+   <a href="https://replit.com/@BerylHoffman/Magpie-ChatBot-Lab-v3#Main.java" target="_blank">replit.com version 3</a>
 
-Run the code below or this |replit.com version 3| to see this new method ``findKeyword`` in action. It is called from the ``getResponse`` method to print out an appropriate response based on a keyword. For example, looking for the word ``"no"`` to print out ``"Why so negative?"``, but it won't match no inside of another word like ``"another"``.
+Run the code below or |JuiceMind| or |replit.com version 3| to see this new method ``findKeyword`` in action. It is called from the ``getResponse`` method to print out an appropriate response based on a keyword. For example, looking for the word ``"no"`` to print out ``"Why so negative?"``, but it won't match no inside of another word like ``"another"``.
 
 .. code-block:: java
 
