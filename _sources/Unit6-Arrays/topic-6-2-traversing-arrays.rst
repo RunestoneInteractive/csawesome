@@ -1062,13 +1062,17 @@ Be careful not to jump out of loop too early when you are looking for a value in
 
    <a href= "https://replit.com/@BerylHoffman/SpellChecker1" target="_blank">replit</a>
 
+.. |JuiceMind| raw:: html
+
+   <a href= "https://play.juicemind.com/dashboard/teams/Mk2wWMTqPkekcxTDWqRn/item/97829972-9107-46cd-8258-61b6cc781241#f8c29bd7-3d6b-4ea8-8cf5-0a6ec6d6b918" target="_blank">JuiceMind</a>
+
 .. |input files| raw:: html
 
    <a href="https://runestone.academy/ns/books/published/csawesome/Unit7-ArrayList/topic-input-files.html" target="_blank">input files</a>
 
 In this challenge, you will use an array of English words from a dictionary file to see if a given word is spelled correctly. We encourage you to work in pairs for this challenge. Make sure you have done the last coding exercise above which will help you with this challenge.
 
-This challenge includes a dictionary file of 10,000 English words which is read into the array dictionary for you. You could use this |replit| code instead that has an even bigger dictionary of English words and lets you do input with your spell checker. If you use repl, copy in the link for your repl in the Active Code window below to turn it in. If you are interested in how to read in files using Java, there is an optional |input files| lesson at the end of Unit 7.
+This challenge includes a dictionary file of 10,000 English words which is read into the array dictionary for you. You could use this |JuiceMind| or |replit| code instead that has an even bigger dictionary of English words and lets you do input with your spell checker (click on the folder to see all the files). If you are interested in how to read in files using Java, there is an optional |input files| lesson at the end of Unit 7.
 
 1. Write a ``print10`` method that prints out the first 10 words of the dictionary array. Do not print out the whole array of 10,000 words!
 2. Write a ``spellcheck`` method that takes a word as a parameter and returns true if it is in the dictionary array. It should return false if it is not found (When can you tell that you have not found a word in the dictionary?). Test your code below by changing the word sent to the spellcheck() method in main. This algorithm is called a **linear search** where we step through the array one element at a time (here the dictionary one word at a time) looking for a certain element.

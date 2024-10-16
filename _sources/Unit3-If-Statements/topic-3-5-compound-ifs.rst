@@ -600,11 +600,11 @@ AP Practice
 
       - Third cannot be printed out unless First is printed out first.
 
-    - FirstSecond
+    - First Second
 
       + Good tracing!
 
-    - FirstThird
+    - First Third
 
       - Take another look at the second condition.
 
