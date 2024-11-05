@@ -445,11 +445,11 @@ In a game like Adventure, else if statements can be used to respond to commands 
       }
 
       private static int goal = 5;
-      private static String input1 = "n s e w y y y y y y y y y y y y y y";
-      private static String input2 = "s e w y n y y y y y y y y y y y y y";
-      private static String input3 = "e w y n s y y y y y y y y y y y y y";
-      private static String input4 = "w y n s e y y y y y y y y y y y y y";
-      private static String input5 = "y n s e w y y y y y y y y y y y y y";
+      private static String input1 = "n"; // s e w y y y y y y y y y y y y y y";
+      private static String input2 = "s"; // e w y n y y y y y y y y y y y y y";
+      private static String input3 = "e"; // w y n s y y y y y y y y y y y y y";
+      private static String input4 = "w"; // y n s e y y y y y y y y y y y y y";
+      private static String input5 = "y"; // n s e w y y y y y y y y y y y y y";
       private String output1, output2, output3, output4, output5;
 
       @Test
