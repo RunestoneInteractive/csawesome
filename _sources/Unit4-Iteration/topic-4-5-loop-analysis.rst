@@ -75,7 +75,7 @@ Here is a complex loop.  See if you can trace the code on paper by making a trac
 Did your trace table look like the following?
 
 .. figure:: Figures/whileLoopTrace.png
-    :width: 150px
+    :width: 300px
     :align: center
     :figclass: align-center
 
@@ -206,7 +206,7 @@ In the code above the largest value that allows the loop to run is 6 (which is t
    :language: java
    :autograde: unittest
 
-   How many stars are printed out by the following loops? How many times do the loops run? Calculate on paper before you run the code.
+   How many stars are printed out by the following loops? How many times do the loops run? Calculate on paper before you run the code. Trace through it with the Code Lens button.
    ~~~~
    public class NestedLoops
    {
@@ -249,7 +249,100 @@ In the code above the largest value that allows the loop to run is 6 (which is t
 
 For the example above, the outer loop executes 4 - 0 + 1 = 5 times and the inner 9 - 0 + 1 = 10 times so the total is 5 * 10 = 50.
 
+Non-rectangular Nested Loops
+-------------------------------
 
+In the nested loops we have seen so far, the inner loop always runs a set number of times. However, nested loops can be **non-rectangular** where the number of times the inner loop runs is dependent on the outer loop's variable. Here is an example of a non-rectangular nested loop (notice the ``j <= i`` ending condition in the inner loop):
+
+.. code-block:: java
+
+    for (int i = 1; i <= 4; i++)
+    {
+         for (int j = 1; j <= i; j++)
+         {
+              System.out.print("*");
+         }
+         System.out.println();
+    }
+
+This code will print a triangle of stars instead of a rectangle because the inner loop runs i times and prints 1 star when i=1, 2 stars when i=2, etc.
+
+.. code-block:: java
+
+    *
+    **
+    ***
+    ****
+
+
+|CodingEx| **Coding Exercise**
+
+
+.. activecode::  triangle-stars
+   :language: java
+   :autograde: unittest
+
+   How many stars are printed out by the following non-rectangular loops? Trace through it with the Code Lens button. Then, can you change the code so that the triangle is upside down where the first row has 5 stars and the last row has 1 star? Hint: make the inner loop count from row up to 5.
+   ~~~~
+   public class NestedLoops
+   {
+
+       public static void main(String[] args)
+       {
+           for (int row = 0; row < 5; row++)
+           {
+               // Change the inner loop to count from row up to 5
+               for (int col = 0; col <= row; col++)
+               {
+                   System.out.print("*");
+               }
+               System.out.println();
+           }
+       }
+   }
+   ====
+   import static org.junit.Assert.*;
+
+   import org.junit.*;
+
+   import java.io.*;
+
+   public class RunestoneTests extends CodeTestHelper
+   {
+       @Test
+       public void testMain() throws IOException
+       {
+           String output = getMethodOutput("main");
+           String expect = "*****\n****\n***\n**\n*\n";
+           boolean passed = getResults(expect, output, "Expected output from main");
+           assertTrue(passed);
+       }
+       @Test
+       public void testCodeContains()
+       {
+           boolean check = checkCodeContains("col=row", "col=row");
+           assertTrue(check);
+       }
+   }
+
+
+How many stars are printed out? How many times do the loops iterate? The outer loop runs 5 times and the inner loop runs 0, 1, 2, 3, 4, 5 times respectively. So, the number of stars printed are 0 + 1 + 2 + 3 + 4 + 5 = 15. Notice that this is the sum of a series of natural numbers from 0 to 5. 
+
+There is a neat formula to calculate the sum of n natural numbers: ``n(n+1)/2`` where n is the number of times the outer loop runs or the maximum number of times the inner loop runs. So, for the example above, the outer loop runs 5 times (and the inner loop runs 0 to a maximum of 5 times) so for n=5, the inner loop runs 5(5+1)/2 = 15 times. 
+
+This summation formula has a great story that goes back to the famous mathematician Carl Gauss. The story goes that when he was in elementary school in the 1780s, his teacher asked the class to add up all the numbers from 1 to 100. Gauss quickly discovered the pattern that the sum of the first and last numbers is 1 + 100 = 101, the sum of the second and second-to-last numbers is 2 + 99 = 101, and so on. So if you write the series 1 to 100 twice and pair things up, you can quickly see that you have 100 pairs that sum to 101 and then you can divide 100*101 by 2 to get down to just 1 series. Gauss's formula for the sum of the first n natural numbers ``n(n+1)/2`` works for any n. Try it with adding up 1 to 5 and 1 to 10 by pairing numbers until you memorize the pattern and the formula. 
+
+.. figure:: Figures/sumFormula.png
+    :width: 400px
+    :align: center
+    :figclass: align-center
+
+    Figure 2: How Gauss quickly calculated the sum of the first 100 natural numbers.
+
+
+.. note::
+
+   In non-rectangular loops, the number of times the inner loop runs can be calculated with the sum of natural numbers formula ``n(n+1)/2`` where n is the number of times the outer loop runs or the maximum number of times the inner loop runs.
 
 |Groupwork| Programming Challenge : POGIL Analyzing Loops
 ----------------------------------------------------------
