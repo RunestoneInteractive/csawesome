@@ -11,12 +11,13 @@ Posttest
     :option_3: C 
     :option_4: D 
     :results: instructor
+    
     <b>Theme Park Discount</b>
     <br>
     A theme park offers discounts on ticket prices based on age and the number of visits per month. The parameter age is the person's age in years, and visitsPerMonth is the average number of visits per month. The result is the discount percentage encoded as an int. The conditions are:
     <ul>
-    <li>If the person is 13 years old or younger or visits the theme park 4 or more times per month, they get a 20% discount.</li>
-    <li>If the person is older than 13 years old and visits the theme park 2 or more times per month, they get a 10% discount.</li>
+    <li>If the person is 13 years old or younger and visits the theme park 3 or more times per month, they get a 20% discount.</li>
+    <li>If the person is older than 13 years old and visits the theme park 5 or more times per month, they get a 10% discount.</li>
     <li>If neither condition is met, and the person is between 13 and 19 years old (inclusive), they get a 5% discount.</li>
     <li>Otherwise, there is no discount.</li>
     </ul>
@@ -24,7 +25,10 @@ Posttest
     <b>Only the highlighted lines are different in each option.</b>
     <br>
 
-    <img src="https://i.postimg.cc/P5WhF5V8/gym.png" width="1000">
+    <img src="https://i.postimg.cc/bYWnKSpz/posttest-theme1.png" width="1000">
+
+    <img src="https://i.postimg.cc/XY0CvMrm/posttest-theme2.png" width="1000">
+
 
 
 .. poll:: most-common-posttest-unlucky
@@ -47,21 +51,26 @@ Posttest
     <b>Only the highlighted lines are different in each option.</b>
 
     <br>
-    <img src="https://i.postimg.cc/SNWCVW4L/lucky.png" width="1000">
+    <img src="https://i.postimg.cc/dVmTkWd1/posttest-unlucky-1.png" width="1000">
 
-.. activecode:: most-common-posttest-course
+    <img src="https://i.postimg.cc/pXjjxVLK/posttest-unlucky-2.png" width="1000">
+
+.. activecode:: most-common-posttest-work
    :language: java
    :autograde: unittest
 
-   You are selecting a course based on interest level and your available study hours per week. The parameter interestLevel represents the average interest score (from 0 to 10, where 10 indicates high interest), and studyHours represents available study hours per week. The result is the course type encoded as an int value with 0=no course, 1=basic, 2=intermediate, 3=advanced. The conditions are:
+   .. raw:: html
 
-   * If the interest level is 9 or more, and the study hours are 10 or more, the result is 3 (advanced).
-   * If the interest level is between 6 and 8 (inclusive), and the study hours are 5 or more (inclusive), the result is 2 (intermediate).
-   * If the interest level is between 3 and 5 (inclusive), and the study hours are 2 or more (inclusive), the result is 1 (basic).
-   * Otherwise, you decide not to take the course, so the result is 0 (no course).
+      <b> Working Overtime </b>
+
+
+   You and your project partner are deciding whether to work overtime based on your remaining workload. The parameter ``yourWorkload`` represents how much work you have left, and ``partnerWorkload`` represents how much work your project partner has left, both in the range from 0 to 20. The result is an ``int`` value indicating whether you both should work overtime. Return:
+    * If either workload is 5 or less (i.e., there's little work left), return 0 (no need to work overtime);
+    * With the exception that if eithr workload is 18 or more, return 2 (i.e., a large amount of work to complete);
+    * Otherwise, return 1 (maybe).
 
    .. table::
-      :name: course-table
+      :name: work-table
       :class: longtable
       :align: left
       :width: 80%
@@ -69,34 +78,30 @@ Posttest
       +----------------------------------------------------+-----------------+
       | Example Input                                      | Expected Output |
       +====================================================+=================+
-      | ``selectCourse(9, 10)``                            | ``3``           |
+      | ``needOvertime(4, 3)``                             | ``0``           |
       +----------------------------------------------------+-----------------+
-      | ``selectCourse(7, 6)``                             | ``2``           |
+      | ``needOvertime(4, 18)``                            | ``2``           |
       +----------------------------------------------------+-----------------+
-      | ``selectCourse(5, 2)``                             | ``1``           |
-      +----------------------------------------------------+-----------------+
-      | ``selectCourse(2, 5)``                             | ``0``           |
-      +----------------------------------------------------+-----------------+
-      | ``selectCourse(8, 0)``                             | ``0``           |
+      | ``needOvertime(6, 15)``                            | ``1``           |
       +----------------------------------------------------+-----------------+
 
    ~~~~
-   public class CourseSelection 
+   public class OvertimeDecision 
    {
-      public static int selectCourse(int interestLevel, int studyHours)
-      {
-         // Your Code Here //
-      }
+       public static int needOvertime(int yourWorkload, int partnerWorkload)
+       {
+           // Your Code Here //
+       }
 
-      public static void main(String[] args)
-      {
-         System.out.println(selectCourse(9, 10));  // 3
-         System.out.println(selectCourse(7, 6));  // 2
-         System.out.println(selectCourse(7, 2));  // 2
-         System.out.println(selectCourse(5, 2));  // 1
-         System.out.println(selectCourse(2, 5));  // 0
-         System.out.println(selectCourse(8, 0));  // 0
-     }
+       public static void main(String[] args)
+       {
+           System.out.println(needOvertime(4, 3)); // Output: 0
+
+           System.out.println(needOvertime(4, 18));  // Output: 2
+
+           System.out.println(needOvertime(6, 15)); // Output: 1
+
+      }
    }
 
    ====
@@ -111,10 +116,34 @@ Posttest
        }
 
        @Test
-       public void testBoundarySum() throws IOException {
-            String output = getMethodOutput("main");
-            String expect = "3\n2\n2\n1\n0\n0\n";
-           boolean passed = getResults(expect, output, "Expected output from main");
-           assertTrue(passed);
-      }
+       public void testValue1() throws IOException {
+           OvertimeDecision c = new OvertimeDecision();
+           assertTrue(getResults(0, c.needOvertime(4, 3), "needOvertime(4, 3)"));
+       }
+
+       @Test
+       public void testValue2() throws IOException {
+           OvertimeDecision c = new OvertimeDecision();
+           assertTrue(getResults(2, c.needOvertime(4, 18), "needOvertime(4, 18)"));
+       }
+
+       @Test
+       public void testValue3() throws IOException {
+           OvertimeDecision c = new OvertimeDecision();
+           assertTrue(getResults(1, c.needOvertime(6, 15), "needOvertime(6, 15)"));
+       }
+
+       @Test
+       public void testValue4() throws IOException {
+           OvertimeDecision c = new OvertimeDecision();
+           assertTrue(getResults(1, c.needOvertime(10, 15), "Hidden test"));
+       }
+
+       @Test
+       public void testValue5() throws IOException {
+           OvertimeDecision c = new OvertimeDecision();
+           assertTrue(getResults(2, c.needOvertime(18, 3), "Hidden test"));
+       }
    }
+
+

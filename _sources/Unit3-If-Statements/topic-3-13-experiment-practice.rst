@@ -56,7 +56,7 @@ Practice Problems
          if (cond == 'wr') {
             href = "topic-3-13-experiment-practice-W.html"
          } else if (cond == 'hp') {
-            href = "topic-3-13-experiment-practice-H.html"
+            href = "topic-3-13-experiment-practice-P.html"
          }
          window.location.href = href;
       };

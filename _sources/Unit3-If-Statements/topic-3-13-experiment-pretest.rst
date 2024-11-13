@@ -25,7 +25,11 @@ Pretest
     <b>Only the highlighted lines are different in each option.</b>
     <br>
 
-    <img src="https://i.postimg.cc/P5WhF5V8/gym.png" width="1000">
+
+    <img src="https://i.postimg.cc/ZRf89wG3/pretest-gym1.png" width="1000">
+
+    <img src="https://i.postimg.cc/RFC1VkD4/pretest-gym2.png" width="1000">
+
 
 
 .. poll:: most-common-pretest-lucky
@@ -48,21 +52,30 @@ Pretest
     <b>Only the highlighted lines are different in each option.</b>
 
     <br>
-    <img src="https://i.postimg.cc/SNWCVW4L/lucky.png" width="1000">
+    <img src="https://i.postimg.cc/m2fcmN2s/pretest-lucky-1.png" width="1000">
 
-.. activecode:: most-common-pretest-vacation
+    <img src="https://i.postimg.cc/nc4XgjCQ/pretest-lucky-2.png" width="1000">
+
+
+    
+
+
+
+.. activecode:: most-common-pretest-clean
    :language: java
    :autograde: unittest
 
-   You are selecting a vacation package based on weather and budget. The parameter weather represents average weather score (from 0 to 10, where 10 is perfect weather), and budget represents available budget in thousands of dollars. The result is the package type encoded as an int value with 0=no package, 1=standard, 2=premium, 3=luxury. The conditions are:
+   .. raw:: html
 
-   * If the weather score is 9 or more, and the budget is 5 or more, the result is 3 (luxury).
-   * If the weather score is between 6 and 8 (inclusive), and the budget is 3 or more (inclusive), the result is 2 (premium).
-   * If the weather score is between 3 and 5 (inclusive), and the budget is 1 or more (inclusive), the result is 1 (standard).
-   * Otherwise, you decide not to go on vacation, so the result is 0 (no package).
+      <b> Apartment Cleaning </b>
+
+   You and your roommate are deciding whether to clean the apartment. The parameter ``yourMessiness`` represents how messy your side of the apartment is, and ``roommateMessiness`` represents how messy your roommate's side is, both in the range from 0 to 20. The result is an ``int`` value indicating whether it's time to clean. Return:
+   If either messiness is 5 or less (i.e., it's still relatively clean), return 0 (no need to clean);
+   With the exception that if either messiness is 18 or more (i.e. the apartment is very messy), return 2 (definitely needs to clean);
+   Otherwise, return 1 (maybe).
 
    .. table::
-      :name: vacation-table
+      :name: clean-table
       :class: longtable
       :align: left
       :width: 80%
@@ -70,34 +83,30 @@ Pretest
       +----------------------------------------------------+-----------------+
       | Example Input                                      | Expected Output |
       +====================================================+=================+
-      | ``selectPackage(9, 5)``                            | ``3``           |
+      | ``shouldClean(4, 3)``                              | ``0``           |
       +----------------------------------------------------+-----------------+
-      | ``selectPackage(7, 3)``                            | ``2``           |
+      | ``shouldClean(4, 18)``                             | ``2``           |
       +----------------------------------------------------+-----------------+
-      | ``selectPackage(4, 1)``                            | ``1``           |
-      +----------------------------------------------------+-----------------+
-      | ``selectPackage(2, 5)``                            | ``0``           |
-      +----------------------------------------------------+-----------------+
-      | ``selectPackage(8, 0)``                            | ``0``           |
+      | ``shouldClean(6, 15)``                             | ``1``           |
       +----------------------------------------------------+-----------------+
 
    ~~~~
-   public class VacationPackageSelection 
+   public class CleaningDecision 
    {
-      public static int selectPackage(int weather, int budget)
-      {
-         // Your Code Here //
-      }
+       public static int shouldClean(int yourMessiness, int roommateMessiness)
+       {
+           // Your Code Here //
+       }
 
-      public static void main(String[] args)
-      {
-         System.out.println(selectPackage(9, 5));  // 3
-         System.out.println(selectPackage(7, 3));  // 2
-         System.out.println(selectPackage(8, 6));  // 2
-         System.out.println(selectPackage(4, 1));  // 1
-         System.out.println(selectPackage(2, 5));  // 0
-         System.out.println(selectPackage(8, 0));  // 0
-     }
+       public static void main(String[] args)
+       {
+           System.out.println(shouldClean(4, 3)); // Output: 0
+
+           System.out.println(shouldClean(4, 18));  // Output: 2
+
+           System.out.println(shouldClean(6, 15)); // Output: 1
+
+       }
    }
 
    ====
@@ -112,10 +121,32 @@ Pretest
        }
 
        @Test
-       public void testBoundarySum() throws IOException {
-            String output = getMethodOutput("main");
-            String expect = "3\n2\n2\n1\n0\n0\n";
-           boolean passed = getResults(expect, output, "Expected output from main");
-           assertTrue(passed);
-      }
+       public void testValue1() throws IOException {
+           CleaningDecision c = new CleaningDecision();
+           assertTrue(getResults(0, c.shouldClean(4, 3), "shouldClean(4, 3)"));
+       }
+
+       @Test
+       public void testValue2() throws IOException {
+           CleaningDecision c = new CleaningDecision();
+           assertTrue(getResults(2, c.shouldClean(4, 18), "shouldClean(4, 18)"));
+       }
+
+       @Test
+       public void testValue3() throws IOException {
+           CleaningDecision c = new CleaningDecision();
+           assertTrue(getResults(1, c.shouldClean(6, 15), "shouldClean(6, 15)"));
+       }
+
+       @Test
+       public void testValue4() throws IOException {
+           CleaningDecision c = new CleaningDecision();
+           assertTrue(getResults(1, c.shouldClean(10, 15), "Hidden test"));
+       }
+
+       @Test
+       public void testValue5() throws IOException {
+           CleaningDecision c = new CleaningDecision();
+           assertTrue(getResults(2, c.shouldClean(18, 3), "Hidden test"));
+       }
    }
