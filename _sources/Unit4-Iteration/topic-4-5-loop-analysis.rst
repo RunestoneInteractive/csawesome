@@ -95,11 +95,11 @@ Did your trace table look like the following?
    :answer_d: var1 = 0, var2 = 2
    :answer_e: The loop will cause a run-time error with a division by zero
    :correct: b
-   :feedback_a: The loop stops one of two ways, when var2 = 0 or when var1 / var2 = 0 - neither is true in this case
+   :feedback_a: The loop stops one of two ways, when var2 = 0 or when var1 / var2 < 0 - neither is true in this case
    :feedback_b: The loop stopped because var2 = 0.  After the first execution of the loop var1 = 1 and var2 = 1.  After the second execution of the loop var1 = 2 and var2 = 0.  This stops the loop and doesn't execute the second part of the complex conditional.
-   :feedback_c: The loop stops one of two ways, when var2 = 0 or when var1 / var2 = 0 - neither is true in this case
-   :feedback_d: The loop stops one of two ways, when var2 = 0 or when var1 / var2 = 0 - neither is true in this case
-   :feedback_e: Even though var1 = 2 and var2 = 0 when the conditional is executed the first condition is true so the rest of the complex conditional won't execute.
+   :feedback_c: The loop stops one of two ways, when var2 = 0 or when var1 / var2 < 0 - neither is true in this case
+   :feedback_d: The loop stops one of two ways, when var2 = 0 or when var1 / var2 < 0 - neither is true in this case
+   :feedback_e: This does not cause a run-time error because the loop stops before the division by zero would occur because of short-circuit evaluation where the first condition in the && is false when var2 is 0, so the second condition is not executed.
 
    What are the values of var1 and var2 when the code finishes executing?
 
@@ -111,7 +111,7 @@ Did your trace table look like the following?
      while ((var2 != 0) && ((var1 / var2) >= 0))
      {
         var1 = var1 + 1;
-        var2 = var2 -1;
+        var2 = var2 - 1;
      }
 
 .. mchoice:: qlb_2_3
