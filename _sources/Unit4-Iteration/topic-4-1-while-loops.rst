@@ -418,7 +418,7 @@ You can use a ``while`` loop to repeat the body of the loop a certain number of 
 
    <a href="https://replit.com/@BerylHoffman/Average#Main.java" target="_blank">replit</a>
 
-Here's another example of an input-conrolled loop, which you can try online with |JuiceMind| or |replit|. This code calculates the average of positive numbers. The number -1 is used as the **sentinel value**. The while loop will run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Remember that skipping step 3 will often lead to an infinite loop!
+Here's another example of an input-controlled loop, which you can try online with |JuiceMind| or |replit|. This code calculates the average of positive numbers. The number -1 is used as the **sentinel value**. The while loop will run while the user does not input -1. What would happen if you forgot step 3 (change the loop variable - get a new input)? Remember that skipping step 3 will often lead to an infinite loop!
 
 .. code-block:: java
 
