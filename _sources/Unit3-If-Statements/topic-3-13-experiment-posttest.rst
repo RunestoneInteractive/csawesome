@@ -58,6 +58,7 @@ Posttest
 .. activecode:: most-common-posttest-work
    :language: java
    :autograde: unittest
+   :nocodelens:
 
    .. raw:: html
 

@@ -64,15 +64,16 @@ Pretest
 .. activecode:: most-common-pretest-clean
    :language: java
    :autograde: unittest
+   :nocodelens:
 
    .. raw:: html
 
       <b> Apartment Cleaning </b>
 
    You and your roommate are deciding whether to clean the apartment. The parameter ``yourMessiness`` represents how messy your side of the apartment is, and ``roommateMessiness`` represents how messy your roommate's side is, both in the range from 0 to 20. The result is an ``int`` value indicating whether it's time to clean. Return:
-   If either messiness is 5 or less (i.e., it's still relatively clean), return 0 (no need to clean);
-   With the exception that if either messiness is 18 or more (i.e. the apartment is very messy), return 2 (definitely needs to clean);
-   Otherwise, return 1 (maybe).
+    * If either messiness is 5 or less (i.e., it's still relatively clean), return 0 (no need to clean);
+    * With the exception that if either messiness is 18 or more (i.e. the apartment is very messy), return 2 (definitely needs to clean);
+    * Otherwise, return 1 (maybe).
 
    .. table::
       :name: clean-table

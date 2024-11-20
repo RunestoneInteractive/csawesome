@@ -8,6 +8,7 @@ Practice Problems (Write Code)
 .. activecode:: most-common-practice-alarmclock-written
    :language: java
    :autograde: unittest
+   :nocodelens:
 
    Given a ``day`` of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a ``boolean`` indicating if we are on ``vacation``, return a string of the form ``"7:00"`` indicating when the alarm clock should ring. Weekdays, the alarm should be ``"7:00"`` and on the weekend it should be ``"10:00"``. Unless we are on vacation -- then on weekdays it should be ``"10:00"`` and weekends it should be ``"off"``.
 
@@ -70,6 +71,7 @@ Practice Problems (Write Code)
 .. activecode:: most-common-practice-datefashion-written
    :language: java
    :autograde: unittest
+   :nocodelens:
 
    You and your date are trying to get a table at a restaurant. The parameter ``you`` is the stylishness of your clothes, in the range 0..10, and ``date`` is the stylishness of your date's clothes. The result getting the table is encoded as an int value with 0=no, 1=maybe, 2=yes. If either of you is very stylish, 8 or more, then the result is ``2`` (yes). With the exception that if either of you has style of 2 or less, then the result is ``0`` (no). Otherwise the result is ``1`` (maybe).
 
@@ -132,6 +134,7 @@ Practice Problems (Write Code)
 .. activecode:: most-common-practice-frontback-written
    :language: java
    :autograde: unittest
+   :nocodelens:
 
    Create the method ``front_back(str, start, end)`` that takes three strings and returns
    a string based on the following conditions.
@@ -208,3 +211,20 @@ Practice Problems (Write Code)
       }
    }
 
+
+.. raw:: html
+
+    <p>click on the following link to proceed to the posttest: <b><a id="next-link"><font size="+2">posttest</font></a></b></p>
+
+.. raw:: html
+
+    <script type="text/javascript" >
+
+      window.onload = function() {
+
+        a = document.getElementById("next-link")
+        a.href = "topic-3-13-experiment-posttest.html"
+
+      };
+
+    </script>

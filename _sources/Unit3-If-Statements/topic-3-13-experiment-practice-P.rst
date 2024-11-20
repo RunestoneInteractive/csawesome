@@ -16,3 +16,20 @@ Practice Problems (Mixed Code Help)
 .. selectquestion:: most-common-practice-frontback-toggle 
    :fromid: most-common-practice-frontback-written, most-common-practice-frontback-mixed
    :toggle: lock
+
+.. raw:: html
+
+    <p>click on the following link to proceed to the posttest: <b><a id="next-link"><font size="+2">posttest</font></a></b></p>
+
+.. raw:: html
+
+    <script type="text/javascript" >
+
+      window.onload = function() {
+
+        a = document.getElementById("next-link")
+        a.href = "topic-3-13-experiment-posttest.html"
+
+      };
+
+    </script>
