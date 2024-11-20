@@ -621,9 +621,9 @@ The Animal Guessing program that we will make uses the following decision tree:
 .. activecode:: challenge3-3-IfElse-20Questions-autograde
   :language: java
   :autograde: unittest
-  :stdin: y y
+  :stdin: y y y
 
-  The code below is a simple 20 questions game that guesses an animal. In Runestone, you need to provide the input below the code before you run it. It is set to answer the questions with y and y. Run the code to see the result. Change the input to guess the other animals. It can only guess 3 animals. Let's add more!
+  The code below is a simple 20 questions game that guesses an animal. In Runestone, you need to provide the input below the code before you run it. It is set to answer the questions with y and y. Run the code to see the result. Change the input to guess the other animals. It can only guess 3 animals. Let's add more! Add a question and if/else statement on line 20 to distinguish a cat and a dog and on line 31 to distinguish a turtle and a bird. Change the input below the code to test your new questions and answers.
   ~~~~
   import java.util.Scanner;
 
@@ -638,28 +638,35 @@ The Animal Guessing program that we will make uses the following decision tree:
         String answer = scan.next(); // in other IDEs, use nextLine()
         if (answer.equals("y")) 
         {
-        System.out.println("Is it a pet (y/n)?");
-        answer = scan.next();
-        if (answer.equals("y")) 
-        {
-            System.out.println("I guess a dog! Click on run to play again.");
-        }
-        else 
-        { 
-            
-            System.out.println("I guess an elephant! Click on run to play again.");   
-        }
+            System.out.println("Is it a pet (y/n)?");
+            answer = scan.next();
+            if (answer.equals("y")) 
+            {
+                // Uncomment the question and answer code below.
+                // Add in your question to distinguish cat vs dog 
+                // System.out.println("change this question");
+                // answer = scan.next();
+                // Add another if/else to guess a cat vs dog 
+
+                System.out.println("I guess a dog! Click on run to play again.");
+            }
+            else 
+            { 
+                System.out.println("I guess an elephant! Click on run to play again.");   
+            }
         }      
         else { // not a mammal
-        
+            // Uncomment the question and answer code below.
+            // Add in your question to distinguish turtle vs bird 
+            // System.out.println("change this question");
+            // answer = scan.next();
+            // Add another if/else to guess a turtle vs bird 
+
             System.out.println("I guess a bird! Click on run to play again.");
-        
         }      
     
-
     }
   }
-
   ====
   import static org.junit.Assert.*;
 
