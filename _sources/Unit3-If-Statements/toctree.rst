@@ -27,6 +27,7 @@ AP CSA Exam Weighting: 15-17.5%
    Exercises.rst
    magpieindex.rst
    frq-game-score.rst
+   topic-3-13-more-practice-experiment.rst
    topic-3-13-more-practice-coding.rst
 
 

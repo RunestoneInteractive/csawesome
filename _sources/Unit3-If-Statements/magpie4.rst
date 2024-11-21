@@ -175,7 +175,7 @@ You can also step through the code in the |Java Visualizer|. It may take a minut
         *     something "you"
         * @return the transformed statement
         */
-       private String transformIMeStatement(String statement)
+       private String transformIYouStatement(String statement)
        {
            // ADD CODE HERE
            return "Why do you...";
@@ -315,7 +315,7 @@ Look at the code. See how it handles “I want to” and you/me statements.
 
 .. |replit.com version 4| raw:: html
 
-   <a href="https://firewalledreplit.com/@BerylHoffman/Magpie-ChatBot-Lab-v4#Main.java" target="_blank">replit.com version 4</a>
+   <a href="https://replit.com/@BerylHoffman/Magpie-ChatBot-Lab-v4#Main.java" target="_blank">replit.com version 4</a>
 
 
 Then add two new methods, ``transformIWantStatement`` and ``transformIYouStatement``, and calls to each as described below. Alter the code either above in the active code window or on |JuiceMind| or |replit.com version 4| or in an IDE of your choice:

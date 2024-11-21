@@ -477,7 +477,7 @@ When you finish and run your program, what is a good guessing strategy for guess
 
    <a href="https://replit.com/@BerylHoffman/Guessing-Game#Main.java" target="_blank">replit</a>
 
-For this project, you will need to use the |Scanner class| for input and |JuiceMindGuess| or |replitGuess| or another IDE of your choice.
+For this project, you can use the |Scanner class| for input and |JuiceMindGuess| or |replitGuess| or another IDE of your choice.
 
 .. activecode:: challenge4-1-loop-GuessingGame-autograde
   :language: java
