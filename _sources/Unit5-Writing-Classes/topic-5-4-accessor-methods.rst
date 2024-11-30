@@ -435,7 +435,7 @@ You've been hired to create a software system for the Awesome Animal Clinic! The
            }
            boolean passed = len >= 3;
 
-           getResults(expect, actual, "Checking main method prints info for 3 Pet objects", passed);
+           getResults(expect, actual, "Checking main method prints info for Pet objects", passed);
            assertTrue(passed);
        }
    }
