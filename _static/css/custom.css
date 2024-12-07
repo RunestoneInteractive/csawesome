@@ -33,6 +33,11 @@ strong,
     font-weight: bolder;
 }
 
+.runestone-sphinx
+div.highlight pre {
+  background-color: lightyellow;
+}
+
 a,
 .runestone-sphinx a
 {

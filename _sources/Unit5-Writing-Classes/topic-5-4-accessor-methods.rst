@@ -420,7 +420,7 @@ You've been hired to create a software system for the Awesome Animal Clinic! The
        {
            String output = getMethodOutput("main");
 
-           String expect = "3+ line(s) of text";
+           String expect = "2+ line(s) of text";
            String actual = " line(s) of text";
 
            int len = output.split("\n").length;
@@ -433,9 +433,9 @@ You've been hired to create a software system for the Awesome Animal Clinic! The
            {
                actual = output.length() + actual;
            }
-           boolean passed = len >= 3;
+           boolean passed = len >= 2;
 
-           getResults(expect, actual, "Checking main method prints info for Pet objects", passed);
+           getResults(expect, actual, "Checking main method prints info for 2 Pet objects", passed);
            assertTrue(passed);
        }
    }
