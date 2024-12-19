@@ -25,9 +25,9 @@ Posttest
     <b>Only the highlighted lines are different in each option.</b>
     <br>
 
-    <img src="https://i.postimg.cc/bYWnKSpz/posttest-theme1.png" width="1000">
+    <img src="../_images/posttest-theme1.png" width="1000">
 
-    <img src="https://i.postimg.cc/XY0CvMrm/posttest-theme2.png" width="1000">
+    <img src="../_images/posttest-theme2.png" width="1000">
 
 
 
@@ -51,9 +51,9 @@ Posttest
     <b>Only the highlighted lines are different in each option.</b>
 
     <br>
-    <img src="https://i.postimg.cc/dVmTkWd1/posttest-unlucky-1.png" width="1000">
+    <img src="../_images/posttest-unlucky-1.png" width="1000">
 
-    <img src="https://i.postimg.cc/pXjjxVLK/posttest-unlucky-2.png" width="1000">
+    <img src="../_images/posttest-unlucky-2.png" width="1000">
 
 .. activecode:: most-common-posttest-work
    :language: java

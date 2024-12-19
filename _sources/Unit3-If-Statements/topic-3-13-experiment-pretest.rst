@@ -26,9 +26,9 @@ Pretest
     <br>
 
 
-    <img src="https://i.postimg.cc/ZRf89wG3/pretest-gym1.png" width="1000">
+    <img src="../_images/pretest-gym1.png" width="1000">
 
-    <img src="https://i.postimg.cc/RFC1VkD4/pretest-gym2.png" width="1000">
+    <img src="../_images/pretest-gym2.png" width="1000">
 
 
 
@@ -52,9 +52,9 @@ Pretest
     <b>Only the highlighted lines are different in each option.</b>
 
     <br>
-    <img src="https://i.postimg.cc/m2fcmN2s/pretest-lucky-1.png" width="1000">
+    <img src="../_images/pretest-lucky-1.png" width="1000">
 
-    <img src="https://i.postimg.cc/nc4XgjCQ/pretest-lucky-2.png" width="1000">
+    <img src="../_images/pretest-lucky-2.png" width="1000">
 
 
     

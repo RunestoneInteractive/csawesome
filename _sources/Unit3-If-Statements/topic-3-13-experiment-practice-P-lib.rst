@@ -146,3 +146,36 @@ Practice Problems (Mixed Code)
        } #tag:10; depends:9;
    =====
    }  #tag:11; depends:10;
+
+
+.. image:: Figures/experiment/pretest-gym1.png
+    :width: 0
+    :align: left
+
+.. image:: Figures/experiment/pretest-gym2.png
+    :width: 0
+    :align: left
+    
+.. image:: Figures/experiment/pretest-lucky-1.png
+    :width: 0
+    :align: left
+
+.. image:: Figures/experiment/pretest-lucky-2.png
+    :width: 0
+    :align: left
+
+.. image:: Figures/experiment/posttest-theme1.png
+    :width: 0
+    :align: left
+
+.. image:: Figures/experiment/posttest-theme2.png
+    :width: 0
+    :align: left
+    
+.. image:: Figures/experiment/posttest-unlucky-1.png
+    :width: 0
+    :align: left
+
+.. image:: Figures/experiment/posttest-unlucky-2.png
+    :width: 0
+    :align: left
