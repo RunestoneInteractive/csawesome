@@ -179,7 +179,10 @@ In the following exercises which are similar to the Free Response Questions (FRQ
       +----------------------------------------------------+-----------------+
       |      ``alarmClock(0, false)``                      | ``10:00``       |
       +----------------------------------------------------+-----------------+
-
+      |      ``alarmClock(6, true)``                       | ``off``         |
+      +----------------------------------------------------+-----------------+
+      |      ``alarmClock(4, true)``                       | ``10:00``       |
+      +----------------------------------------------------+-----------------+
    ~~~~
    public class VacayAlarmClock
    {
@@ -193,6 +196,8 @@ In the following exercises which are similar to the Free Response Questions (FRQ
          System.out.println(alarmClock(1, false));
          System.out.println(alarmClock(5, false));
          System.out.println(alarmClock(0, false));
+         System.out.println(alarmClock(6, true));
+         System.out.println(alarmClock(4, true));
      }
    }
 
@@ -210,7 +215,7 @@ In the following exercises which are similar to the Free Response Questions (FRQ
        @Test
        public void testBoundarySum() throws IOException {
             String output = getMethodOutput("main");
-            String expect = "7:00, 7:00, 10:00";
+            String expect = "7:00, 7:00, 10:00, off, 10:00";
            boolean passed = getResults(expect, output, "Expected output from main");
            assertTrue(passed);
      
