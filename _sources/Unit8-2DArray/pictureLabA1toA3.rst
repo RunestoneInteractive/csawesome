@@ -129,7 +129,7 @@ enter button to update the display. You can also use the menu to change the zoom
 
     <iframe height="500px" width="100%" style="max-width:90%; margin-left:5%"  src="https://firewalledreplit.com/@BerylHoffman/PictureExplorer?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-If you fork to make a copy of this program https://firewalledreplit.com/@BerylHoffman/PictureExplorer, you can upload your own images, or try this site https://imagecolorpicker.com/ where you can upload your own images and explore their RGB values.
+If you fork to make a copy of this program https://firewalledreplit.com/@BerylHoffman/PictureExplorer, you can upload your own images, or try this site https://imagecolorpicker.com/ or https://imagecolorpickerai.com/ where you can upload your own images and explore their RGB, HEX, and HSL values.
 Images are often stored as jpg or jpeg files. A JPEG file is one that follows an international standard for
 storing picture data using lossy compression. Lossy compression means that the amount of data that is
 stored is much smaller than the available data, but the part that is not stored is data we won't miss.
